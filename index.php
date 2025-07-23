@@ -5,7 +5,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1140, initial-scale=0.6, maximum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>แบบฟอร์มประกันภัย - บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</title>
     <link rel="icon" href="assets/icon-white.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -89,10 +89,9 @@
             header, footer {
                 border-radius: 10px;
             }
-            /* ไม่เปลี่ยนทิศทางของ row เพื่อให้แสดงผลเหมือนในคอมพิวเตอร์ */
-            /* .row {
+            .row {
                 flex-direction: column !important;
-            } */
+            }
             .col-md-4, .col-md-8, .col-md-2, .col-md-3, .col-md-6 {
                 width: 100% !important;
                 max-width: 100% !important;
@@ -115,8 +114,8 @@
     </style>
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="./assets/text-align.css">
-    <link rel="stylesheet" href="./assets/desktop-like.css">
     <link rel="stylesheet" href="./assets/header-fix.css">
+    <link rel="stylesheet" href="./assets/better-responsive.css">
 </head>
 <body class="py-3">
 

@@ -1,8 +1,8 @@
-<meta name="viewport" content="width=1140, initial-scale=0.6, maximum-scale=1.0, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="./assets/responsive.css">
 <link rel="stylesheet" href="./assets/text-align.css">
 <link rel="stylesheet" href="./assets/header-fix.css">
-<link rel="stylesheet" href="./assets/desktop-like.css">
+<link rel="stylesheet" href="./assets/better-responsive.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <div class="mb-5">

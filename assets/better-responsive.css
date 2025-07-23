@@ -1,0 +1,68 @@
+/* ปรับปรุง CSS สำหรับการแสดงผลแบบ responsive */
+@media (max-width: 767px) {
+    /* ปรับขนาดฟอนต์ให้เหมาะสมกับมือถือ */
+    body {
+        font-size: 14px;
+    }
+    
+    /* ปรับขนาดของ input ให้เหมาะสมกับมือถือ */
+    .form-control {
+        font-size: 16px; /* ป้องกันการซูมอัตโนมัติในมือถือ */
+    }
+    
+    /* ปรับการแสดงผลของ form-check */
+    .form-check-inline {
+        margin-right: 0.5rem;
+    }
+    
+    /* ปรับขนาดของ section title */
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    /* ปรับขนาดของ padding */
+    .p-3 {
+        padding: 0.75rem !important;
+    }
+    
+    /* ปรับขนาดของ margin */
+    .mb-2 {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    /* ปรับการแสดงผลของ radio และ checkbox */
+    .form-check-input {
+        margin-top: 0.25rem;
+    }
+    
+    /* ปรับการแสดงผลของ label */
+    label {
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    
+    /* ปรับการแสดงผลของ canvas */
+    canvas {
+        max-width: 100%;
+    }
+    
+    /* ปรับการแสดงผลของปุ่ม */
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-2, .col-md-3 {
+        width: 50% !important;
+        float: left;
+    }
+}
+
+/* ปรับการแสดงผลของ input ให้เหมาะสมกับทุกอุปกรณ์ */
+input[type="date"], input[type="time"] {
+    min-height: 38px;
+}
