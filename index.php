@@ -109,6 +109,7 @@
 
     </style>
     <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="stylesheet" href="./assets/text-align.css">
 </head>
 <body class="py-3">
 
