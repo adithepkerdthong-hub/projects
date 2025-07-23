@@ -23,8 +23,13 @@ body, .form-title, .section-title, label, input, select, textarea, button {
     .d-flex.align-items-center {
         flex-wrap: wrap;
     }
-    .col-md-4.text-start, .col-md-4.text-center {
+    .col-md-4.text-center {
         text-align: center !important;
+        margin-bottom: 15px;
+    }
+    
+    .col-md-4.text-start {
+        text-align: left !important;
         margin-bottom: 15px;
     }
     /* ให้แสดงรูปโลโก้ในมือถือ */

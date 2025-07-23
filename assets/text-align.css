@@ -16,3 +16,27 @@ textarea {
 ::placeholder {
     text-align: left !important;
 }
+
+/* แก้ไขปัญหาข้อความอยู่ตรงกลางในมือถือ */
+@media (max-width: 767px) {
+    .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-8, .col-md-9, .col-md-12 {
+        text-align: left !important;
+    }
+    
+    input[type="text"], 
+    input[type="email"], 
+    input[type="number"], 
+    input[type="date"], 
+    input[type="time"], 
+    select, 
+    textarea,
+    .form-control {
+        text-align: left !important;
+    }
+    
+    label {
+        text-align: left !important;
+        display: block;
+        width: 100%;
+    }
+}

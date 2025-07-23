@@ -95,7 +95,6 @@
             .col-md-4, .col-md-8, .col-md-2, .col-md-3, .col-md-6 {
                 width: 100% !important;
                 max-width: 100% !important;
-                text-align: center !important;
                 margin-bottom: 15px;
             }
             header .col-md-4.text-start, footer .col-md-2.text-start {
