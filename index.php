@@ -112,9 +112,8 @@
 <body class="py-3">
 
 <!-- Header -->
-<div class="container-custom">
-    <header style="background-color:#0a3556; color:white; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" class="py-4">
-        <div class="content-padding">
+<header style="background-color:#0a3556; color:white; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" class="py-4 container-custom">
+    <div class="content-padding">
             <div class="row align-items-center flex-wrap">
                 <div class="col-md-4 text-start">
                     <img src="./assets/logo-white.png" alt="Falcon Insurance" style="height:50px; margin-right:20px; display:inline-block;">
@@ -128,8 +127,7 @@
                 </div>
             </div>
         </div>
-    </header>
-</div>
+</header>
 
 <div class="main-wrapper">
     <!-- Main Content -->
@@ -143,9 +141,8 @@
 </div>
 
 <!-- Footer -->
-<div class="container-custom">
-    <footer style="background-color:#0a3556; color:white; box-shadow: 0 -4px 6px rgba(0,0,0,0.1);" class="py-4 mt-5">
-        <div class="content-padding">
+<footer style="background-color:#0a3556; color:white; box-shadow: 0 -4px 6px rgba(0,0,0,0.1);" class="py-4 mt-5 container-custom">
+    <div class="content-padding">
             <div class="row align-items-center mb-4 flex-wrap">
                 <div class="col-md-2 text-start">
                     <img src="./assets/logo-white.png" alt="Falcon Insurance" style="height:50px; margin-right:20px; display:inline-block;">
@@ -157,8 +154,7 @@
             <div class="text-center" style="margin-top:15px;letter-spacing:0.4px;font-size:0.95rem;">33/4 อาคารเอ เดอะไนน์ทาวเวอร์ ชั้น 24-25 ถนนพระราม 9 แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพมหานคร 10310</div>
             <div class="text-center" style="margin-top:10px;letter-spacing:0.4px;font-size:0.95rem;">โทร : 02 037 9988 อีเมล : fcicustomerservice@falconinsurance.co.th</div>
         </div>
-    </footer>
-</div>
+</footer>
 
 <div class="container-custom">
     <div style="margin-top:12px; margin-bottom:15px; text-align:center; color:#777; font-size:0.9rem; letter-spacing:0.3px;">© 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์</div>
