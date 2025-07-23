@@ -25,8 +25,10 @@
             text-align: center !important;
             margin-bottom: 15px;
         }
+        /* ให้แสดงรูปโลโก้ในมือถือ */
         .col-md-4.text-start img {
-            display: none;
+            display: inline-block !important;
+            margin: 0 auto;
         }
     }
     }
