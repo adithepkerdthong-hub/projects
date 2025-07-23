@@ -123,7 +123,7 @@
                     <div style="font-size:0.85rem;opacity:0.85;letter-spacing:0.4px;">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
                 </div>
                 <div class="col-md-4 text-end">
-                    <div style="font-size:1.15rem;font-weight:600;letter-spacing:0.5px;">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
+                    <div style="font-size:0.95rem;font-weight:600;letter-spacing:0.5px;">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
                 </div>
             </div>
         </div>
