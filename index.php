@@ -100,6 +100,11 @@
             header .col-md-4.text-start, footer .col-md-2.text-start {
                 text-align: center !important;
             }
+            
+            /* ยกเว้นส่วนชื่อบริษัทที่ต้องการให้อยู่ชิดขวา */
+            header .col-md-4.text-end {
+                text-align: right !important;
+            }
             header .col-md-4.text-start img, footer .col-md-2.text-start img {
                 margin-right: 0;
                 display: inline-block !important;
@@ -109,6 +114,7 @@
     </style>
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="./assets/text-align.css">
+    <link rel="stylesheet" href="./assets/header-fix.css">
 </head>
 <body class="py-3">
 
