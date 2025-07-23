@@ -1,37 +1,5 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body, .form-title, .section-title, label, input, select, textarea, button {
-        font-family: 'Prompt', 'Sarabun', 'Kanit', Arial, Tahoma, sans-serif !important;
-    }
-    .form-title {
-        font-weight: 700;
-        letter-spacing: 0.5px;
-    }
-    @media (max-width: 767px) {
-        .form-title {
-            font-size: 1.3rem !important;
-        }
-        .section-title {
-            font-size: 1.1rem;
-        }
-        canvas {
-            width: 100%;
-            height: auto;
-        }
-        .d-flex.align-items-center {
-            flex-wrap: wrap;
-        }
-        .col-md-4.text-start, .col-md-4.text-center {
-            text-align: center !important;
-            margin-bottom: 15px;
-        }
-        /* ให้แสดงรูปโลโก้ในมือถือ */
-        .col-md-4.text-start img {
-            display: inline-block !important;
-            margin: 0 auto;
-        }
-    }
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="./assets/responsive.css">
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <div class="mb-5">

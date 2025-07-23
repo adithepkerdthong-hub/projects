@@ -1,0 +1,96 @@
+/* Responsive CSS for all devices */
+body, .form-title, .section-title, label, input, select, textarea, button {
+    font-family: 'Prompt', 'Sarabun', 'Kanit', Arial, Tahoma, sans-serif !important;
+}
+
+.form-title {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .form-title {
+        font-size: 1.3rem !important;
+    }
+    .section-title {
+        font-size: 1.1rem;
+    }
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+    .d-flex.align-items-center {
+        flex-wrap: wrap;
+    }
+    .col-md-4.text-start, .col-md-4.text-center {
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+    /* ให้แสดงรูปโลโก้ในมือถือ */
+    .col-md-4.text-start img {
+        display: inline-block !important;
+        margin: 0 auto;
+    }
+    
+    /* ปรับขนาดฟอร์มให้เหมาะกับมือถือ */
+    input[type="text"], input[type="email"], input[type="number"], input[type="date"], input[type="time"], select, textarea {
+        font-size: 16px; /* ป้องกันการซูมในมือถือ */
+    }
+    
+    /* ปรับการแสดงผลของฟอร์มในมือถือ */
+    .form-check-inline {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    /* ปรับขนาดปุ่มให้ใหญ่ขึ้นในมือถือ */
+    .btn {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    
+    /* ปรับขนาดช่องกรอกข้อมูลให้เหมาะสมกับมือถือ */
+    .col-auto input[type="text"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 10px;
+    }
+    
+    /* ปรับการแสดงผลของ canvas สำหรับลายเซ็น */
+    canvas {
+        max-width: 100%;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-2, .col-md-3 {
+        width: 50% !important;
+        margin-bottom: 15px;
+    }
+    
+    canvas {
+        max-width: 100%;
+    }
+}
+
+/* Fix for flex items in small screens */
+@media (max-width: 576px) {
+    .d-flex.align-items-center.flex-nowrap {
+        flex-wrap: wrap !important;
+    }
+    
+    .text-nowrap {
+        margin-top: 5px;
+        display: block;
+    }
+    
+    .d-flex.flex-wrap.align-items-center.gap-3 {
+        gap: 10px !important;
+    }
+    
+    .form-check.d-flex.align-items-center.flex-wrap {
+        margin-bottom: 15px;
+    }
+}
