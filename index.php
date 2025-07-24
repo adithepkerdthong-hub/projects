@@ -16,62 +16,79 @@
             margin: 0;
             background-color: #f5f5f5;
             font-family: 'Sarabun', sans-serif;
+            font-size: 1rem;
+            color: #222;
         }
         .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
+            font-size: 1.35rem;
+            font-weight: 700;
             color: #0a3556;
             margin-bottom: 1.2rem;
+            letter-spacing: 0.5px;
         }
         .container-custom, .main-wrapper, header, footer {
             width: 100%;
             max-width: 1140px;
             margin-left: auto;
             margin-right: auto;
+            box-sizing: border-box;
         }
         .container-custom {
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 18px;
+            padding-right: 18px;
         }
         .main-wrapper {
-            background-color: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.08);
-            padding: 32px 0;
-            border-radius: 18px;
+            background-color: #fff;
+            box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+            padding: 36px 0;
+            border-radius: 20px;
             overflow: hidden;
-            margin-top: 32px;
-            margin-bottom: 32px;
+            margin-top: 36px;
+            margin-bottom: 36px;
+            transition: box-shadow 0.2s;
         }
         header, footer {
             overflow: hidden;
-            border-radius: 12px;
+            border-radius: 14px;
+            transition: border-radius 0.2s;
         }
         header {
-            margin-top: 10px;
+            margin-top: 12px;
         }
         footer {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         .content-padding {
-            padding: 0 30px;
+            padding: 0 32px;
         }
         header .content-padding, footer .content-padding {
-            padding: 0 30px;
+            padding: 0 32px;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .col-md-4, .col-md-8, .col-md-2 {
+            padding-left: 0;
+            padding-right: 0;
         }
         @media (max-width: 1199.98px) {
             .container-custom, .main-wrapper, header, footer {
                 max-width: 960px;
             }
             .main-wrapper {
-                padding: 16px 0;
+                padding: 20px 0;
             }
             .content-padding {
-                padding: 0 20px;
+                padding: 0 18px;
             }
         }
         @media (max-width: 991.98px) {
             .container-custom, .main-wrapper, header, footer {
                 max-width: 720px;
+            }
+            .main-wrapper {
+                padding: 12px 0;
             }
         }
         @media (max-width: 767.98px) {
@@ -81,27 +98,26 @@
             .main-wrapper {
                 margin: 8px auto;
                 padding: 8px 0;
-                border-radius: 10px;
+                border-radius: 12px;
             }
             .content-padding {
-                padding: 0 15px;
+                padding: 0 8px;
             }
             header, footer {
                 border-radius: 10px;
             }
             .row {
                 flex-direction: column !important;
+                gap: 0.5rem;
             }
             .col-md-4, .col-md-8, .col-md-2, .col-md-3, .col-md-6 {
                 width: 100% !important;
                 max-width: 100% !important;
-                margin-bottom: 15px;
+                margin-bottom: 12px;
             }
             header .col-md-4.text-start, footer .col-md-2.text-start {
                 text-align: center !important;
             }
-            
-            /* ยกเว้นส่วนชื่อบริษัทที่ต้องการให้อยู่ชิดขวา */
             header .col-md-4.text-end {
                 text-align: right !important;
             }
@@ -109,8 +125,34 @@
                 margin-right: 0;
                 display: inline-block !important;
             }
+            h1.h4 {
+                font-size: 1.1rem !important;
+            }
+            .section-title {
+                font-size: 1.1rem;
+            }
         }
-
+        @media (max-width: 575.98px) {
+            .container-custom, .main-wrapper, header, footer {
+                max-width: 100%;
+            }
+            .main-wrapper {
+                border-radius: 8px;
+                padding: 4px 0;
+            }
+            .content-padding {
+                padding: 0 4px;
+            }
+            header, footer {
+                border-radius: 8px;
+            }
+            h1.h4 {
+                font-size: 1rem !important;
+            }
+            .section-title {
+                font-size: 1rem;
+            }
+        }
     </style>
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="./assets/text-align.css">
