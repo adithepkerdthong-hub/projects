@@ -93,7 +93,8 @@
         }
         @media (max-width: 767.98px) {
             .container-custom, .main-wrapper, header, footer {
-                max-width: 100vw;
+                max-width: 100%;
+                width: 100%;
             }
             .main-wrapper {
                 margin: 8px auto;
@@ -102,7 +103,7 @@
                 box-shadow: 0 1px 8px rgba(0,0,0,0.08);
             }
             .content-padding {
-                padding: 0 4vw;
+                padding: 0 10px;
             }
             header, footer {
                 border-radius: 10px;
@@ -112,11 +113,15 @@
             .row {
                 flex-direction: column !important;
                 gap: 0.5rem;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
             }
             .col-md-4, .col-md-8, .col-md-2, .col-md-3, .col-md-6 {
                 width: 100% !important;
                 max-width: 100% !important;
                 margin-bottom: 10px;
+                padding-left: 5px !important;
+                padding-right: 5px !important;
             }
             header .col-md-4.text-start, footer .col-md-2.text-start {
                 text-align: center !important;
@@ -142,20 +147,35 @@
             footer .text-center {
                 font-size: 0.85rem !important;
                 word-break: break-word;
-                padding-left: 2vw;
-                padding-right: 2vw;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .form-control {
+                font-size: 14px !important;
+                padding: 6px 8px !important;
+            }
+            .border {
+                border-radius: 8px !important;
+            }
+            .p-3 {
+                padding: 10px !important;
+            }
+            .mb-3 {
+                margin-bottom: 10px !important;
             }
         }
         @media (max-width: 575.98px) {
             .container-custom, .main-wrapper, header, footer {
-                max-width: 100vw;
+                max-width: 100%;
+                width: 100%;
             }
             .main-wrapper {
                 border-radius: 8px;
-                padding: 2px 0;
+                padding: 5px 0;
+                margin: 5px auto;
             }
             .content-padding {
-                padding: 0 2vw;
+                padding: 0 8px;
             }
             header, footer {
                 border-radius: 8px;
@@ -167,6 +187,7 @@
             }
             .section-title {
                 font-size: 0.95rem;
+                margin-bottom: 8px !important;
             }
             .text-center, .text-end, .text-start {
                 font-size: 0.9rem !important;
@@ -174,8 +195,39 @@
             footer .text-center {
                 font-size: 0.8rem !important;
                 word-break: break-word;
-                padding-left: 1vw;
-                padding-right: 1vw;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+            .form-control {
+                font-size: 13px !important;
+                padding: 5px 7px !important;
+            }
+            .border {
+                border-radius: 6px !important;
+            }
+            .p-3 {
+                padding: 8px !important;
+            }
+            .mb-3 {
+                margin-bottom: 8px !important;
+            }
+            .col-auto {
+                width: 100% !important;
+                margin-bottom: 5px !important;
+            }
+            .form-check-inline {
+                margin-right: 5px !important;
+            }
+            .form-check-input {
+                width: 14px !important;
+                height: 14px !important;
+            }
+            .btn {
+                padding: 6px 10px !important;
+                font-size: 13px !important;
+            }
+            canvas {
+                height: 120px !important;
             }
         }
     </style>
@@ -183,6 +235,8 @@
     <link rel="stylesheet" href="./assets/text-align.css">
     <link rel="stylesheet" href="./assets/header-fix.css">
     <link rel="stylesheet" href="./assets/better-responsive.css">
+    <link rel="stylesheet" href="./assets/mobile-fix.css">
+    <link rel="stylesheet" href="./assets/mobile-specific-fix.css">
 </head>
 <body class="py-3">
 

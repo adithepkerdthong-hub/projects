@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="./assets/text-align.css">
 <link rel="stylesheet" href="./assets/header-fix.css">
 <link rel="stylesheet" href="./assets/better-responsive.css">
+<link rel="stylesheet" href="./assets/mobile-fix.css">
+<link rel="stylesheet" href="./assets/mobile-specific-fix.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <div class="mb-5">
