@@ -66,3 +66,57 @@
 input[type="date"], input[type="time"] {
     min-height: 38px;
 }
+
+/* Container width consistency */
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Consistent styling for header and footer */
+header.container,
+footer.container {
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    header.container,
+    footer.container {
+        width: calc(100% - 1rem);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    header.container,
+    footer.container {
+        width: calc(100% - 0.5rem);
+    }
+}
