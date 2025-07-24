@@ -72,6 +72,10 @@
                 font-size: 1.05rem;
             }
         }
+        .equal-width {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
     </style>
     <link rel="stylesheet" href="./assets/responsive.css">
     <link rel="stylesheet" href="./assets/text-align.css">
@@ -83,7 +87,7 @@
 <body class="py-3">
 
 <!-- Header -->
-<header class="container mb-4 py-3">
+<header class="container equal-width mb-4 py-3">
     <div class="row align-items-center">
         <div class="col-12 col-md-4 text-center text-md-start mb-2 mb-md-0">
             <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
@@ -98,7 +102,7 @@
     </div>
 </header>
 
-<div class="container">
+<div class="container equal-width">
     <div class="main-wrapper">
         <!-- Main Content -->
         <div class="row">
@@ -110,7 +114,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="container py-3 mt-5">
+<footer class="container equal-width py-3 mt-5">
     <div class="row align-items-center mb-3">
         <div class="col-12 col-md-2 text-center text-md-start mb-2 mb-md-0">
             <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
