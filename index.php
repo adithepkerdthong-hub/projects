@@ -93,18 +93,21 @@
         }
         @media (max-width: 767.98px) {
             .container-custom, .main-wrapper, header, footer {
-                max-width: 540px;
+                max-width: 100vw;
             }
             .main-wrapper {
                 margin: 8px auto;
                 padding: 8px 0;
                 border-radius: 12px;
+                box-shadow: 0 1px 8px rgba(0,0,0,0.08);
             }
             .content-padding {
-                padding: 0 8px;
+                padding: 0 4vw;
             }
             header, footer {
                 border-radius: 10px;
+                padding-top: 12px !important;
+                padding-bottom: 12px !important;
             }
             .row {
                 flex-direction: column !important;
@@ -113,7 +116,7 @@
             .col-md-4, .col-md-8, .col-md-2, .col-md-3, .col-md-6 {
                 width: 100% !important;
                 max-width: 100% !important;
-                margin-bottom: 12px;
+                margin-bottom: 10px;
             }
             header .col-md-4.text-start, footer .col-md-2.text-start {
                 text-align: center !important;
@@ -124,33 +127,55 @@
             header .col-md-4.text-start img, footer .col-md-2.text-start img {
                 margin-right: 0;
                 display: inline-block !important;
+                height: 38px !important;
             }
             h1.h4 {
-                font-size: 1.1rem !important;
+                font-size: 1.05rem !important;
+                margin-bottom: 0.5rem !important;
             }
             .section-title {
-                font-size: 1.1rem;
+                font-size: 1.05rem;
+            }
+            .text-center, .text-end, .text-start {
+                font-size: 0.95rem !important;
+            }
+            footer .text-center {
+                font-size: 0.85rem !important;
+                word-break: break-word;
+                padding-left: 2vw;
+                padding-right: 2vw;
             }
         }
         @media (max-width: 575.98px) {
             .container-custom, .main-wrapper, header, footer {
-                max-width: 100%;
+                max-width: 100vw;
             }
             .main-wrapper {
                 border-radius: 8px;
-                padding: 4px 0;
+                padding: 2px 0;
             }
             .content-padding {
-                padding: 0 4px;
+                padding: 0 2vw;
             }
             header, footer {
                 border-radius: 8px;
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
             }
             h1.h4 {
-                font-size: 1rem !important;
+                font-size: 0.95rem !important;
             }
             .section-title {
-                font-size: 1rem;
+                font-size: 0.95rem;
+            }
+            .text-center, .text-end, .text-start {
+                font-size: 0.9rem !important;
+            }
+            footer .text-center {
+                font-size: 0.8rem !important;
+                word-break: break-word;
+                padding-left: 1vw;
+                padding-right: 1vw;
             }
         }
     </style>
