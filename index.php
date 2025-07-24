@@ -248,7 +248,7 @@
                     <img src="./assets/logo-white.png" alt="Falcon Insurance" style="height:50px; margin-right:20px; display:inline-block;">
                 </div>
                 <div class="col-md-4 text-center">
-                    <h1 class="h4 mb-1" style="font-weight:700;letter-spacing:0.8px;">บบฟอร์มประกันภัย</h1>
+                    <h1 class="h4 mb-1" style="font-weight:700;letter-spacing:0.8px;">แบบฟอร์มประกันภัย</h1>
                     <div style="font-size:0.85rem;opacity:0.85;letter-spacing:0.4px;">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
                 </div>
                 <div class="col-md-4 text-end">
