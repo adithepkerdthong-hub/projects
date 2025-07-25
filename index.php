@@ -205,13 +205,16 @@
             }
             .main-wrapper {
                 border-radius: 6px;
-                margin: 4px auto;
+                margin: 0 auto;
                 padding: 4px;
             }
             header, footer {
                 border-radius: 6px;
                 margin: 4px auto;
                 padding: 4px !important;
+            }
+            header {
+                margin-bottom: 12px !important;
             }
             .header-content {
                 flex-direction: column;
