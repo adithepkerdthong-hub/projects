@@ -41,8 +41,8 @@
             background-color: #fff;
             box-shadow: 0 2px 24px rgba(0,0,0,0.10);
             border-radius: 20px;
-            margin: 0 auto 32px auto;
-            padding: 32px 32px 32px 32px;
+            margin: 25px auto;
+            padding: 2rem;
             width: 100%;
         }
         
@@ -60,8 +60,8 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 0 auto 4px auto;
-            padding: 32px 32px 32px 32px;
+            margin: 20px auto;
+            padding: 1.5rem;
         }
         
         .logo-img {
@@ -145,12 +145,12 @@
             
             .main-wrapper {
                 border-radius: 15px;
-                margin: 0 auto 0 auto;
-                padding: 1.2rem;
+                margin: 20px auto;
+                padding: 1.5rem;
             }
             
             header, footer {
-                margin: 0 auto 0 auto;
+                margin: 15px auto;
             }
             
             .logo-img {
@@ -205,13 +205,13 @@
             
             .main-wrapper {
                 border-radius: 10px;
-                margin: 10px auto;
-                padding: 1rem 1rem;
+                margin: 15px auto;
+                padding: 1.2rem;
             }
             
             header, footer {
                 border-radius: 10px;
-                margin: 0 auto 16px auto;
+                margin: 12px auto;
                 padding: 1rem !important;
             }
             
@@ -270,11 +270,13 @@
             }
             
             .main-wrapper {
-                padding: 0.7rem 0.7rem;
+                margin: 10px auto;
+                padding: 1rem;
             }
             
             header, footer {
-                padding: 0.7rem !important;
+                margin: 8px auto;
+                padding: 0.8rem !important;
             }
             
             .logo-img {
@@ -298,9 +300,13 @@
             max-width: 100%;
             height: auto;
         }
-    .container + .container {
-        margin-top: 8px !important;
-    }
+        .container:first-child {
+            padding-top: 20px;
+        }
+        
+        .container:last-child {
+            padding-bottom: 20px;
+        }
     </style>
 
 </head>
