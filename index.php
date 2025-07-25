@@ -36,6 +36,9 @@
             margin: 0 auto;
             padding: 20px;
             flex: 1 0 auto;
+            aspect-ratio: 1/1;
+            min-width: 200px;
+            min-height: 200px;
         }
         
         .main-wrapper {
