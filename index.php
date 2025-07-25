@@ -41,7 +41,7 @@
             background-color: #fff;
             box-shadow: 0 4px 24px rgba(0,0,0,0.10);
             border-radius: 18px;
-            margin: 16px auto;
+            margin: 8px auto;
             padding: 20px;
             width: 100%;
         }
@@ -61,7 +61,7 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-            margin: 8px auto;
+            margin: 4px auto;
             padding: 20px;
             text-align: left;
         }
@@ -89,6 +89,7 @@
         
         .header-center {
             text-align: left;
+            padding-left: 12px;
         }
         
         .header-center h1 {
@@ -147,11 +148,11 @@
             }
             .main-wrapper {
                 border-radius: 14px;
-                margin: 12px auto;
+                margin: 6px auto;
                 padding: 18px;
             }
             header, footer {
-                margin: 12px auto;
+                margin: 6px auto;
                 padding: 18px;
             }
             
@@ -202,31 +203,35 @@
                 padding: 0;
             }
             .container {
-                padding: 0 16px !important;
+                padding: 0 20px !important;
             }
             .main-wrapper {
-                border-radius: 12px;
-                margin: 12px auto;
-                padding: 18px;
+                border-radius: 16px;
+                margin: 8px auto;
+                padding: 24px;
             }
             header, footer {
-                border-radius: 12px;
-                margin: 12px auto;
-                padding: 18px !important;
+                border-radius: 16px;
+                margin: 8px auto;
+                padding: 24px !important;
                 text-align: center;
             }
             header {
-                margin-bottom: 16px !important;
+                margin-bottom: 8px !important;
             }
             .header-content {
                 flex-direction: column;
-                gap: 1rem;
+                gap: 1.2rem;
                 align-items: center;
-                padding: 0 12px;
+                padding: 0 16px;
+            }
+            
+            .header-center {
+                padding-left: 0;
             }
             .section-title {
-                font-size: 1.2rem;
-                margin-bottom: 1rem;
+                font-size: 1.3rem;
+                margin-bottom: 1.2rem;
                 text-align: center;
                 padding-left: 0;
             }
@@ -242,15 +247,15 @@
             }
             
             .header-center h1 {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
             
             .header-center .subtitle {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
             }
             
             .header-right {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
             
             .footer-content {
@@ -265,42 +270,42 @@
             
             .footer-left {
                 justify-content: center;
-                padding: 0 12px;
+                padding: 0 16px;
             }
             
             .footer-right {
                 text-align: center;
-                padding: 0 12px;
+                padding: 0 16px;
             }
             
             .footer-info {
-                font-size: 0.8rem;
-                margin-bottom: 0.6rem;
+                font-size: 0.85rem;
+                margin-bottom: 0.8rem;
             }
         }
         
         /* Extra Small Mobile */
         @media (max-width: 375px) {
             .container {
-                padding: 0 12px !important;
+                padding: 0 16px !important;
             }
             
             .container:first-child {
-                padding-top: 12px !important;
+                padding-top: 16px !important;
             }
             
             .container:last-child {
-                padding-bottom: 12px !important;
+                padding-bottom: 16px !important;
             }
             
             .main-wrapper {
-                margin: 10px auto;
-                padding: 14px;
+                margin: 6px auto;
+                padding: 18px;
             }
             
             header, footer {
-                margin: 10px auto;
-                padding: 14px !important;
+                margin: 6px auto;
+                padding: 18px !important;
             }
             
             .logo-img {
@@ -310,7 +315,7 @@
             }
             
             .section-title {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 padding-left: 0;
             }
         }
@@ -326,11 +331,11 @@
             height: auto;
         }
         .container:first-child {
-            padding-top: 20px;
+            padding-top: 12px;
         }
         
         .container:last-child {
-            padding-bottom: 20px;
+            padding-bottom: 12px;
         }
     </style>
 
