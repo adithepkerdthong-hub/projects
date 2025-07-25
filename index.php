@@ -34,7 +34,7 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 30px;
         }
         
         .main-wrapper {
@@ -140,15 +140,15 @@
         /* Tablet Styles */
         @media (max-width: 991.98px) {
             .container {
-                padding: 0 15px;
+                padding: 0 20px;
             }
             
             .container:first-child {
-                padding-top: 15px;
+                padding-top: 20px;
             }
             
             .container:last-child {
-                padding-bottom: 15px;
+                padding-bottom: 20px;
             }
             
             .main-wrapper {
@@ -208,15 +208,15 @@
             }
             
             .container {
-                padding: 0 12px !important;
+                padding: 0 15px !important;
             }
             
             .container:first-child {
-                padding-top: 12px !important;
+                padding-top: 15px !important;
             }
             
             .container:last-child {
-                padding-bottom: 12px !important;
+                padding-bottom: 15px !important;
             }
             
             .main-wrapper {
@@ -282,15 +282,15 @@
         /* Extra Small Mobile */
         @media (max-width: 375px) {
             .container {
-                padding: 0 8px !important;
+                padding: 0 10px !important;
             }
             
             .container:first-child {
-                padding-top: 8px !important;
+                padding-top: 10px !important;
             }
             
             .container:last-child {
-                padding-bottom: 8px !important;
+                padding-bottom: 10px !important;
             }
             
             .main-wrapper {
@@ -325,11 +325,11 @@
             height: auto;
         }
         .container:first-child {
-            padding-top: 20px;
+            padding-top: 30px;
         }
         
         .container:last-child {
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
     </style>
 
