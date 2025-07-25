@@ -135,7 +135,7 @@
         }
         
         .copyright {
-            text-align: left;
+            text-align: center;
             color: #888;
             font-size: 1rem;
             margin: 24px auto 0 auto;
