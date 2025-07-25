@@ -59,10 +59,11 @@
         }
         
         .logo-img {
-            height: 25px !important;
+            height: 40px !important;
             width: auto !important;
             object-fit: contain;
-            max-height: 25px !important;
+            max-height: 40px !important;
+            max-width: 176px !important;
         }
         
         .header-content {
@@ -136,8 +137,9 @@
             }
             
             .logo-img {
-                height: 22px !important;
-                max-height: 22px !important;
+                height: 35px !important;
+                max-height: 35px !important;
+                max-width: 154px !important;
             }
             
             .header-content {
@@ -191,8 +193,9 @@
             }
             
             .logo-img {
-                height: 20px !important;
-                max-height: 20px !important;
+                height: 30px !important;
+                max-height: 30px !important;
+                max-width: 132px !important;
             }
             
             .section-title {
@@ -237,8 +240,9 @@
             }
             
             .logo-img {
-                height: 18px !important;
-                max-height: 18px !important;
+                height: 25px !important;
+                max-height: 25px !important;
+                max-width: 110px !important;
             }
             
             .section-title {
