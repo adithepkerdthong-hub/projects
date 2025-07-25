@@ -32,10 +32,9 @@
         
         .container {
             width: 100%;
-            max-width: 100%;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 32px;
-            flex: 1 0 auto;
+            padding: 0 60px;
         }
         
         .main-wrapper {
@@ -141,7 +140,7 @@
         /* Tablet Styles */
         @media (max-width: 991.98px) {
             .container {
-                padding: 24px;
+                padding: 0 40px;
             }
             
             .main-wrapper {
@@ -201,7 +200,7 @@
             }
             
             .container {
-                padding: 15px !important;
+                padding: 0 25px !important;
             }
             
             .main-wrapper {
@@ -267,7 +266,7 @@
         /* Extra Small Mobile */
         @media (max-width: 375px) {
             .container {
-                padding: 10px !important;
+                padding: 0 15px !important;
             }
             
             .main-wrapper {
