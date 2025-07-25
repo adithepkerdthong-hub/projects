@@ -53,7 +53,7 @@
             margin-bottom: 1.5rem;
             letter-spacing: 0.5px;
             text-align: left;
-            padding-left: 4px;
+            padding-left: 0;
         }
         
         header, footer {
@@ -195,7 +195,7 @@
             
             .section-title {
                 font-size: 1.2rem;
-                padding-left: 3px;
+                padding-left: 0;
             }
         }
         
