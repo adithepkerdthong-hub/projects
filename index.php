@@ -204,7 +204,7 @@
             header, footer {
                 border-radius: 10px;
                 margin: 10px auto;
-                padding: 1rem 2rem;
+                padding: 1rem 2rem !important;
             }
             
             .logo-img {
@@ -260,7 +260,7 @@
             }
             
             header, footer {
-                padding: 0.75rem 1.5rem;
+                padding: 0.75rem 1.5rem !important;
             }
             
             .logo-img {
@@ -285,12 +285,7 @@
             height: auto;
         }
     </style>
-    <link rel="stylesheet" href="./assets/responsive.css">
-    <link rel="stylesheet" href="./assets/text-align.css">
-    <link rel="stylesheet" href="./assets/header-fix.css">
-    <link rel="stylesheet" href="./assets/better-responsive.css">
-    <link rel="stylesheet" href="./assets/mobile-fix.css">
-    <link rel="stylesheet" href="./assets/mobile-specific-fix.css">
+
 </head>
 <body>
 
