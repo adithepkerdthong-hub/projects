@@ -34,15 +34,15 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 30px;
+            padding: 0 8px;
         }
         
         .main-wrapper {
             background-color: #fff;
             box-shadow: 0 2px 24px rgba(0,0,0,0.10);
             border-radius: 20px;
-            margin: 15px auto;
-            padding: 2rem;
+            margin: 8px auto;
+            padding: 8px;
             width: 100%;
         }
         
@@ -60,8 +60,8 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 10px auto;
-            padding: 1.5rem;
+            margin: 8px auto;
+            padding: 8px;
         }
         
         .logo-img {
