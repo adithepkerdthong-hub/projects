@@ -34,19 +34,16 @@
             width: 100%;
             max-width: 100%;
             margin: 0 auto;
-            padding: 20px;
+            padding: 32px;
             flex: 1 0 auto;
-            aspect-ratio: 1/1;
-            min-width: 200px;
-            min-height: 200px;
         }
         
         .main-wrapper {
             background-color: #fff;
             box-shadow: 0 2px 24px rgba(0,0,0,0.10);
             border-radius: 20px;
-            margin: 20px auto;
-            padding: 2rem;
+            margin: 32px auto;
+            padding: 32px;
             width: 100%;
         }
         
@@ -64,8 +61,8 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 20px auto;
-            padding: 2rem;
+            margin: 32px auto;
+            padding: 32px;
         }
         
         .logo-img {
