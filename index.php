@@ -35,7 +35,7 @@
             background-color: #fff;
             box-shadow: 0 2px 24px rgba(0,0,0,0.10);
             border-radius: 20px;
-            margin: 20px 0;
+            margin: 20px auto;
             padding: 2rem;
             width: 100%;
         }
@@ -54,7 +54,7 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 15px 0;
+            margin: 20px auto;
             padding: 1.5rem;
         }
         
@@ -127,8 +127,12 @@
             
             .main-wrapper {
                 border-radius: 15px;
-                margin: 15px 0;
+                margin: 15px auto;
                 padding: 1.5rem;
+            }
+            
+            header, footer {
+                margin: 15px auto;
             }
             
             .logo-img {
@@ -176,13 +180,13 @@
             
             .main-wrapper {
                 border-radius: 10px;
-                margin: 10px 0;
+                margin: 10px auto;
                 padding: 1rem;
             }
             
             header, footer {
                 border-radius: 10px;
-                margin: 10px 0;
+                margin: 10px auto;
                 padding: 1rem;
             }
             
@@ -263,8 +267,9 @@
 <body>
 
 <!-- Header -->
-<header class="container">
-    <div class="header-content">
+<div class="container">
+    <header>
+        <div class="header-content">
         <div class="header-left">
             <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img img-responsive">
         </div>
@@ -275,8 +280,9 @@
         <div class="header-right">
             <div class="fw-semibold text-responsive">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
         </div>
-    </div>
-</header>
+        </div>
+    </header>
+</div>
 
 <div class="container">
     <div class="main-wrapper">
@@ -286,8 +292,9 @@
 </div>
 
 <!-- Footer -->
-<footer class="container">
-    <div class="footer-content">
+<div class="container">
+    <footer>
+        <div class="footer-content">
         <div class="footer-header">
             <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img img-responsive">
             <div class="fw-bold text-responsive">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
@@ -302,8 +309,9 @@
         <div class="footer-copyright text-responsive" style="color:#bbb;font-size:0.85rem;">
             © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
         </div>
-    </div>
-</footer>
+        </div>
+    </footer>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
