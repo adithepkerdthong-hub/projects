@@ -123,10 +123,12 @@
             margin-bottom: 0.8rem;
         }
         
-        .footer-copyright {
-            margin-top: 1.2rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(255,255,255,0.2);
+        .copyright {
+            text-align: center;
+            color: #888;
+            font-size: 0.85rem;
+            margin: 15px auto;
+            padding: 10px 0;
         }
         
         /* Tablet Styles */
@@ -329,12 +331,17 @@
                 <div class="footer-info text-responsive">
                     โทร : 02 037 9988 | อีเมล : fcicustomerservice@falconinsurance.co.th
                 </div>
-                <div class="footer-copyright text-responsive" style="color:#bbb;font-size:0.85rem;">
-                    © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
-                </div>
+
             </div>
         </div>
     </footer>
+</div>
+
+<!-- Copyright -->
+<div class="container">
+    <div class="copyright text-responsive">
+        © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
