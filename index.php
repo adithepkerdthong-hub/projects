@@ -201,12 +201,12 @@
                 padding: 0;
             }
             .container {
-                padding: 0 4px !important;
+                padding: 0 12px !important;
             }
             .main-wrapper {
                 border-radius: 6px;
                 margin: 0 auto;
-                padding: 4px;
+                padding: 8px;
             }
             header, footer {
                 border-radius: 6px;
