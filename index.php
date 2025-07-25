@@ -198,20 +198,30 @@
         /* Mobile Styles */
         @media (max-width: 575.98px) {
             body {
-                padding: 2px;
-            }
-            .container {
-                padding: 0 !important;
-            }
-            .main-wrapper {
-                border-radius: 8px;
-                margin: 0 auto;
                 padding: 0;
             }
+            .container {
+                padding: 0 4px !important;
+            }
+            .main-wrapper {
+                border-radius: 6px;
+                margin: 4px auto;
+                padding: 4px;
+            }
             header, footer {
-                border-radius: 8px;
-                margin: 0 auto;
-                padding: 0 !important;
+                border-radius: 6px;
+                margin: 4px auto;
+                padding: 4px !important;
+            }
+            .header-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+            .section-title {
+                font-size: 1.1rem;
+                margin-bottom: 0.7rem;
+                padding-left: 2px;
             }
             
             .logo-img {
