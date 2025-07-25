@@ -59,7 +59,7 @@
         }
         
         .logo-img {
-            height: 35px;
+            height: 25px;
             width: auto;
             object-fit: contain;
         }
@@ -114,7 +114,7 @@
             }
             
             .logo-img {
-                height: 30px;
+                height: 22px;
             }
             
             .header-content {
@@ -155,7 +155,7 @@
             }
             
             .logo-img {
-                height: 25px;
+                height: 20px;
             }
             
             .section-title {
@@ -196,7 +196,7 @@
             }
             
             .logo-img {
-                height: 22px;
+                height: 18px;
             }
             
             .section-title {
