@@ -98,15 +98,24 @@
         }
         
         .footer-content {
-            text-align: center;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: start;
         }
         
-        .footer-header {
+        .footer-left {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 1.2rem;
+        }
+        
+        .footer-right {
+            text-align: left;
+        }
+        
+        .footer-company {
+            font-weight: bold;
+            margin-bottom: 1rem;
         }
         
         .footer-info {
@@ -218,9 +227,18 @@
                 font-size: 0.85rem;
             }
             
-            .footer-header {
-                flex-direction: column;
-                gap: 8px;
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .footer-left {
+                justify-content: center;
+            }
+            
+            .footer-right {
+                text-align: center;
             }
             
             .footer-info {
@@ -299,20 +317,22 @@
 <div class="container">
     <footer>
         <div class="footer-content">
-        <div class="footer-header">
-            <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img img-responsive">
-            <div class="fw-bold text-responsive">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
-        </div>
-        <div class="footer-info text-responsive">
-            33/4 อาคารเอ เดอะไนน์ทาวเวอร์ ชั้น 24-25 ถนนพระราม 9<br>
-            แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพมหานคร 10310
-        </div>
-        <div class="footer-info text-responsive">
-            โทร : 02 037 9988 | อีเมล : fcicustomerservice@falconinsurance.co.th
-        </div>
-        <div class="footer-copyright text-responsive" style="color:#bbb;font-size:0.85rem;">
-            © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
-        </div>
+            <div class="footer-left">
+                <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img img-responsive">
+            </div>
+            <div class="footer-right">
+                <div class="footer-company text-responsive">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
+                <div class="footer-info text-responsive">
+                    33/4 อาคารเอ เดอะไนน์ทาวเวอร์ ชั้น 24-25 ถนนพระราม 9<br>
+                    แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพมหานคร 10310
+                </div>
+                <div class="footer-info text-responsive">
+                    โทร : 02 037 9988 | อีเมล : fcicustomerservice@falconinsurance.co.th
+                </div>
+                <div class="footer-copyright text-responsive" style="color:#bbb;font-size:0.85rem;">
+                    © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
+                </div>
+            </div>
         </div>
     </footer>
 </div>
