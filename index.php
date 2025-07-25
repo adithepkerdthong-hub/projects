@@ -212,9 +212,7 @@
                 border-radius: 6px;
                 margin: 4px auto;
                 padding: 16px !important;
-            }
-            .logo-img {
-                padding-left: 8px;
+                text-align: center;
             }
             header {
                 margin-bottom: 12px !important;
@@ -222,12 +220,12 @@
             .header-content {
                 flex-direction: column;
                 gap: 0.5rem;
-                align-items: flex-start;
+                align-items: center;
             }
             .section-title {
                 font-size: 1.1rem;
                 margin-bottom: 0.7rem;
-                padding-left: 2px;
+                text-align: center;
             }
             
             .logo-img {
