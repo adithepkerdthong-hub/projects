@@ -66,28 +66,34 @@
         }
         
         .header-content {
-            display: flex;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
             align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
+            gap: 2rem;
         }
         
         .header-left {
             display: flex;
             align-items: center;
-            gap: 15px;
         }
         
         .header-center {
             text-align: center;
-            flex: 1;
-            min-width: 250px;
+        }
+        
+        .header-center h1 {
+            margin-bottom: 0.3rem;
+            font-size: 1.3rem;
+        }
+        
+        .header-center .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
         }
         
         .header-right {
             text-align: right;
-            min-width: 200px;
+            font-size: 0.95rem;
         }
         
         .footer-content {
@@ -98,8 +104,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
-            margin-bottom: 1rem;
+            gap: 12px;
+            margin-bottom: 1.2rem;
+        }
+        
+        .footer-info {
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-copyright {
+            margin-top: 1.2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
         }
         
         /* Tablet Styles */
@@ -120,13 +137,26 @@
             }
             
             .header-content {
-                flex-direction: column;
+                grid-template-columns: 1fr;
                 text-align: center;
+                gap: 1rem;
             }
             
             .header-left, .header-right {
                 justify-content: center;
                 text-align: center;
+            }
+            
+            .header-center h1 {
+                font-size: 1.2rem;
+            }
+            
+            .header-center .subtitle {
+                font-size: 0.85rem;
+            }
+            
+            .header-right {
+                font-size: 0.9rem;
             }
             
             .section-title {
@@ -166,16 +196,15 @@
             }
             
             .header-center h1 {
-                font-size: 1.1rem !important;
-                margin-bottom: 0.5rem;
+                font-size: 1.1rem;
             }
             
-            .header-center div {
-                font-size: 0.85rem !important;
+            .header-center .subtitle {
+                font-size: 0.8rem;
             }
             
             .header-right {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
             
             .footer-content {
@@ -184,7 +213,12 @@
             
             .footer-header {
                 flex-direction: column;
-                gap: 10px;
+                gap: 8px;
+            }
+            
+            .footer-info {
+                font-size: 0.8rem;
+                margin-bottom: 0.6rem;
             }
         }
         
@@ -235,11 +269,11 @@
             <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img img-responsive">
         </div>
         <div class="header-center">
-            <h1 class="h4 mb-1 fw-bold text-responsive" style="letter-spacing:0.8px;">แบบฟอร์มประกันภัย</h1>
-            <div class="text-responsive" style="font-size:0.95rem;opacity:0.85;letter-spacing:0.4px;">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
+            <h1 class="fw-bold text-responsive">แบบฟอร์มประกันภัย</h1>
+            <div class="subtitle text-responsive">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
         </div>
         <div class="header-right">
-            <div class="fw-semibold text-responsive" style="font-size:1rem;letter-spacing:0.5px;">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
+            <div class="fw-semibold text-responsive">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
         </div>
     </div>
 </header>
@@ -256,11 +290,18 @@
     <div class="footer-content">
         <div class="footer-header">
             <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img img-responsive">
-            <div class="fw-bold text-responsive" style="font-size:1.15rem;letter-spacing:0.6px;">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
+            <div class="fw-bold text-responsive">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
         </div>
-        <div class="text-responsive" style="margin-top:10px;letter-spacing:0.4px;font-size:0.95rem;">33/4 อาคารเอ เดอะไนน์ทาวเวอร์ ชั้น 24-25 ถนนพระราม 9 แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพมหานคร 10310</div>
-        <div class="text-responsive" style="margin-top:8px;letter-spacing:0.4px;font-size:0.95rem;">โทร : 02 037 9988 อีเมล : fcicustomerservice@falconinsurance.co.th</div>
-        <div class="mt-3 text-responsive" style="color:#bbb;font-size:0.9rem;letter-spacing:0.3px;">© 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์</div>
+        <div class="footer-info text-responsive">
+            33/4 อาคารเอ เดอะไนน์ทาวเวอร์ ชั้น 24-25 ถนนพระราม 9<br>
+            แขวงห้วยขวาง เขตห้วยขวาง กรุงเทพมหานคร 10310
+        </div>
+        <div class="footer-info text-responsive">
+            โทร : 02 037 9988 | อีเมล : fcicustomerservice@falconinsurance.co.th
+        </div>
+        <div class="footer-copyright text-responsive" style="color:#bbb;font-size:0.85rem;">
+            © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
+        </div>
     </div>
 </footer>
 
