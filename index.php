@@ -157,17 +157,15 @@
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 1rem;
-                padding: 0 20px;
             }
             
             .header-left, .header-right {
                 justify-content: center;
                 text-align: center;
-                margin: 0 10px;
             }
             
             .header-center {
-                margin: 0 10px;
+                text-align: center;
             }
             
             .header-center h1 {
@@ -206,7 +204,7 @@
             header, footer {
                 border-radius: 10px;
                 margin: 10px auto;
-                padding: 1rem 1.5rem;
+                padding: 1rem 2rem;
             }
             
             .logo-img {
@@ -239,17 +237,14 @@
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 1rem;
-                padding: 0 20px;
             }
             
             .footer-left {
                 justify-content: center;
-                margin: 0 10px;
             }
             
             .footer-right {
                 text-align: center;
-                margin: 0 10px;
             }
             
             .footer-info {
@@ -265,7 +260,7 @@
             }
             
             header, footer {
-                padding: 0.75rem 1rem;
+                padding: 0.75rem 1.5rem;
             }
             
             .logo-img {
