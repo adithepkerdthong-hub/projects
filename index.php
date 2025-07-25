@@ -162,10 +162,12 @@
             .header-left, .header-right {
                 justify-content: center;
                 text-align: center;
+                margin: 0 20px !important;
             }
             
             .header-center {
                 text-align: center;
+                margin: 0 20px !important;
             }
             
             .header-center h1 {
@@ -241,10 +243,12 @@
             
             .footer-left {
                 justify-content: center;
+                margin: 0 20px !important;
             }
             
             .footer-right {
                 text-align: center;
+                margin: 0 20px !important;
             }
             
             .footer-info {
