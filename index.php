@@ -59,9 +59,10 @@
         }
         
         .logo-img {
-            height: 25px;
-            width: auto;
+            height: 25px !important;
+            width: auto !important;
             object-fit: contain;
+            max-height: 25px !important;
         }
         
         .header-content {
@@ -114,7 +115,8 @@
             }
             
             .logo-img {
-                height: 22px;
+                height: 22px !important;
+                max-height: 22px !important;
             }
             
             .header-content {
@@ -155,7 +157,8 @@
             }
             
             .logo-img {
-                height: 20px;
+                height: 20px !important;
+                max-height: 20px !important;
             }
             
             .section-title {
@@ -196,7 +199,8 @@
             }
             
             .logo-img {
-                height: 18px;
+                height: 18px !important;
+                max-height: 18px !important;
             }
             
             .section-title {
