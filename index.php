@@ -90,6 +90,7 @@
         .header-center {
             text-align: left;
             padding-left: 12px;
+            margin-left: 20px;
         }
         
         .header-center h1 {
@@ -177,6 +178,7 @@
             .header-center {
                 text-align: center;
                 padding: 0 12px;
+                margin-left: 0;
             }
             
             .header-center h1 {
@@ -228,6 +230,7 @@
             
             .header-center {
                 padding-left: 0;
+                margin-left: 0;
             }
             .section-title {
                 font-size: 1.3rem;
