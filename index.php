@@ -61,7 +61,7 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 0 auto 32px auto;
+            margin: 0 auto 12px auto;
             padding: 32px 32px 32px 32px;
         }
         
@@ -146,12 +146,12 @@
             
             .main-wrapper {
                 border-radius: 15px;
-                margin: 0 auto 24px auto;
+                margin: 0 auto 0 auto;
                 padding: 1.2rem;
             }
             
             header, footer {
-                margin: 0 auto 24px auto;
+                margin: 0 auto 0 auto;
             }
             
             .logo-img {
