@@ -200,7 +200,7 @@
             header, footer {
                 border-radius: 10px;
                 margin: 10px auto;
-                padding: 1rem;
+                padding: 1rem 1.5rem;
             }
             
             .logo-img {
@@ -256,7 +256,7 @@
             }
             
             header, footer {
-                padding: 0.75rem;
+                padding: 0.75rem 1rem;
             }
             
             .logo-img {
