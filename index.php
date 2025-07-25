@@ -41,7 +41,7 @@
             background-color: #fff;
             box-shadow: 0 2px 24px rgba(0,0,0,0.10);
             border-radius: 20px;
-            margin: 25px auto;
+            margin: 15px auto;
             padding: 2rem;
             width: 100%;
         }
@@ -60,7 +60,7 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 20px auto;
+            margin: 10px auto;
             padding: 1.5rem;
         }
         
@@ -153,12 +153,12 @@
             
             .main-wrapper {
                 border-radius: 15px;
-                margin: 20px auto;
+                margin: 12px auto;
                 padding: 1.5rem;
             }
             
             header, footer {
-                margin: 15px auto;
+                margin: 8px auto;
             }
             
             .logo-img {
@@ -221,13 +221,13 @@
             
             .main-wrapper {
                 border-radius: 10px;
-                margin: 15px auto;
+                margin: 8px auto;
                 padding: 1.2rem;
             }
             
             header, footer {
                 border-radius: 10px;
-                margin: 12px auto;
+                margin: 6px auto;
                 padding: 1rem !important;
             }
             
@@ -294,12 +294,12 @@
             }
             
             .main-wrapper {
-                margin: 10px auto;
+                margin: 5px auto;
                 padding: 1rem;
             }
             
             header, footer {
-                margin: 8px auto;
+                margin: 4px auto;
                 padding: 0.8rem !important;
             }
             
