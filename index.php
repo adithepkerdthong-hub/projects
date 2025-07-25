@@ -15,6 +15,10 @@
             box-sizing: border-box;
         }
         
+        html, body {
+            height: 100%;
+            min-height: 100vh;
+        }
         body {
             background-color: #f5f5f5;
             font-family: 'Sarabun', sans-serif;
@@ -22,6 +26,8 @@
             margin: 0;
             padding: 0;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
         .container {
@@ -29,6 +35,7 @@
             max-width: 100%;
             margin: 0 auto;
             padding: 20px;
+            flex: 1 0 auto;
         }
         
         .main-wrapper {
