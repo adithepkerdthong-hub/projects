@@ -42,7 +42,7 @@
             background-color: #fff;
             box-shadow: 0 2px 24px rgba(0,0,0,0.10);
             border-radius: 20px;
-            margin: 8px auto;
+            margin: 0 auto 32px auto;
             padding: 20px;
             width: 100%;
         }
@@ -61,7 +61,7 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin: 8px auto;
+            margin: 0 auto 32px auto;
             padding: 20px;
         }
         
@@ -146,12 +146,12 @@
             
             .main-wrapper {
                 border-radius: 15px;
-                margin: 4px auto;
+                margin: 0 auto 16px auto;
                 padding: 0.7rem;
             }
             
             header, footer {
-                margin: 4px auto;
+                margin: 0 auto 16px auto;
             }
             
             .logo-img {
@@ -212,7 +212,7 @@
             
             header, footer {
                 border-radius: 10px;
-                margin: 2px auto;
+                margin: 0 auto 8px auto;
                 padding: 0.5rem !important;
             }
             
