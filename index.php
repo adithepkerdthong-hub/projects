@@ -194,7 +194,7 @@
             .main-wrapper {
                 border-radius: 10px;
                 margin: 10px auto;
-                padding: 1rem;
+                padding: 1.5rem 1.2rem;
             }
             
             header, footer {
@@ -252,7 +252,7 @@
         /* Extra Small Mobile */
         @media (max-width: 375px) {
             .main-wrapper {
-                padding: 0.75rem;
+                padding: 1rem 0.9rem;
             }
             
             header, footer {
