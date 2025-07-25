@@ -52,7 +52,7 @@
             color: #0a3556;
             margin-bottom: 1.5rem;
             letter-spacing: 0.5px;
-            text-align: center;
+            text-align: left;
         }
         
         header, footer {
@@ -130,7 +130,7 @@
         }
         
         .copyright {
-            text-align: center;
+            text-align: left;
             color: #888;
             font-size: 1rem;
             margin: 24px auto 0 auto;
