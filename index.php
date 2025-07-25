@@ -52,7 +52,7 @@
             color: #0a3556;
             margin-bottom: 1.2rem;
             letter-spacing: 0.5px;
-            text-align: center;
+            text-align: left;
         }
         
         header, footer {
