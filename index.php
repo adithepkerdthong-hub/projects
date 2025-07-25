@@ -61,7 +61,7 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-            margin: 8px auto;
+            margin: 4px auto 8px auto;
             padding: 16px;
             text-align: left;
         }
