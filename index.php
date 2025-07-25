@@ -302,6 +302,12 @@
     .container + .container {
         margin-top: 4px !important;
     }
+    .main-wrapper {
+        margin-bottom: 4px !important;
+    }
+    footer {
+        margin-top: 0 !important;
+    }
     </style>
 
 </head>
