@@ -194,7 +194,7 @@
             }
             
             .container {
-                padding: 0 15px;
+                padding: 0 25px !important;
             }
             
             .main-wrapper {
@@ -259,6 +259,10 @@
         
         /* Extra Small Mobile */
         @media (max-width: 375px) {
+            .container {
+                padding: 0 20px !important;
+            }
+            
             .main-wrapper {
                 padding: 1rem 0.9rem;
             }
