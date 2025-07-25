@@ -157,6 +157,7 @@
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 1rem;
+                padding: 0 20px;
             }
             
             .header-left, .header-right {
@@ -238,6 +239,7 @@
                 grid-template-columns: 1fr;
                 text-align: center;
                 gap: 1rem;
+                padding: 0 20px;
             }
             
             .footer-left {
