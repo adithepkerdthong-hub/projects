@@ -206,12 +206,15 @@
             .main-wrapper {
                 border-radius: 6px;
                 margin: 0 auto;
-                padding: 8px;
+                padding: 16px;
             }
             header, footer {
                 border-radius: 6px;
                 margin: 4px auto;
-                padding: 4px !important;
+                padding: 16px !important;
+            }
+            .logo-img {
+                padding-left: 8px;
             }
             header {
                 margin-bottom: 12px !important;
