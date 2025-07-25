@@ -34,15 +34,15 @@
             width: 100%;
             max-width: 1000px;
             margin: 0 auto;
-            padding: 24px;
+            padding: 0;
         }
         
         .main-wrapper {
             background-color: #fff;
             box-shadow: 0 4px 24px rgba(0,0,0,0.10);
             border-radius: 18px;
-            margin: 24px auto;
-            padding: 24px;
+            margin: 0 auto;
+            padding: 0;
             width: 100%;
         }
         
@@ -60,8 +60,8 @@
             color: white;
             border-radius: 14px;
             box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-            margin: 24px auto;
-            padding: 24px;
+            margin: 0 auto;
+            padding: 0;
         }
         
         .logo-img {
@@ -140,16 +140,16 @@
         /* Tablet Styles */
         @media (max-width: 991.98px) {
             .container {
-                padding: 12px;
+                padding: 0;
             }
             .main-wrapper {
                 border-radius: 14px;
-                margin: 12px auto;
-                padding: 12px;
+                margin: 0 auto;
+                padding: 0;
             }
             header, footer {
-                margin: 12px auto;
-                padding: 12px;
+                margin: 0 auto;
+                padding: 0;
             }
             
             .logo-img {
@@ -198,17 +198,17 @@
                 padding: 2px;
             }
             .container {
-                padding: 6px !important;
+                padding: 0 !important;
             }
             .main-wrapper {
                 border-radius: 8px;
-                margin: 6px auto;
-                padding: 6px;
+                margin: 0 auto;
+                padding: 0;
             }
             header, footer {
                 border-radius: 8px;
-                margin: 6px auto;
-                padding: 6px !important;
+                margin: 0 auto;
+                padding: 0 !important;
             }
             
             .logo-img {
