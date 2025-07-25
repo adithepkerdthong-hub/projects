@@ -299,6 +299,9 @@
             max-width: 100%;
             height: auto;
         }
+    .container + .container {
+        margin-top: 4px !important;
+    }
     </style>
 
 </head>
