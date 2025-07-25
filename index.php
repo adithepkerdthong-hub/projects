@@ -28,7 +28,7 @@
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 15px;
+            padding: 0 30px;
         }
         
         .main-wrapper {
@@ -134,7 +134,7 @@
         /* Tablet Styles */
         @media (max-width: 991.98px) {
             .container {
-                padding: 0 10px;
+                padding: 0 20px;
             }
             
             .main-wrapper {
@@ -188,7 +188,7 @@
             }
             
             .container {
-                padding: 0 5px;
+                padding: 0 15px;
             }
             
             .main-wrapper {
