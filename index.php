@@ -55,7 +55,7 @@
             border-radius: 14px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             margin: 20px auto;
-            padding: 1.5rem;
+            padding: 1.5rem 1.5rem;
         }
         
         .logo-img {
@@ -206,7 +206,7 @@
             header, footer {
                 border-radius: 10px;
                 margin: 10px auto;
-                padding: 1rem 2rem !important;
+                padding: 1rem 1rem !important;
             }
             
             .logo-img {
@@ -268,7 +268,7 @@
             }
             
             header, footer {
-                padding: 0.75rem 1.5rem !important;
+                padding: 0.75rem 0.75rem !important;
             }
             
             .logo-img {
