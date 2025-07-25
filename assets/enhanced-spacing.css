@@ -1,0 +1,369 @@
+/* Enhanced Spacing & Visual Hierarchy CSS */
+/* This file provides improved spacing, visual hierarchy, and aesthetic enhancements */
+
+/* Enhanced Form Spacing */
+.form-section {
+    margin-bottom: 2.5rem;
+}
+
+.form-row {
+    margin-bottom: 1.25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Enhanced Input Spacing */
+.form-control {
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #0a3556;
+    box-shadow: 0 0 0 0.2rem rgba(10, 53, 86, 0.1);
+    outline: none;
+}
+
+/* Enhanced Label Spacing */
+label {
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: #495057;
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Enhanced Section Spacing */
+.section-title {
+    margin-top: 2.5rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e9ecef;
+    position: relative;
+}
+
+.section-title:first-child {
+    margin-top: 0;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #0a3556, #1e5a8a);
+    border-radius: 2px;
+}
+
+/* Enhanced Form Check Spacing */
+.form-check {
+    margin-bottom: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.form-check-inline {
+    margin-right: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input {
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    margin-left: 0.25rem;
+    line-height: 1.5;
+}
+
+/* Enhanced Border Sections */
+.border.rounded {
+    border: 1px solid #e9ecef !important;
+    border-radius: 12px !important;
+    padding: 2rem !important;
+    margin-bottom: 2.5rem !important;
+    background: #fafafa !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.border.rounded:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Enhanced Row Spacing */
+.row {
+    margin-bottom: 0.75rem;
+}
+
+.row.mb-2 {
+    margin-bottom: 1.25rem !important;
+}
+
+.row.mb-1 {
+    margin-bottom: 1rem !important;
+}
+
+/* Enhanced Column Spacing */
+[class*="col-"] {
+    margin-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* Enhanced Button Spacing */
+.btn {
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem 0.25rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0a3556, #1e5a8a);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1e5a8a, #0a3556);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Enhanced Canvas Spacing */
+canvas {
+    margin: 1.5rem auto;
+    display: block;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enhanced Text Spacing */
+span {
+    line-height: 1.6;
+    margin: 0.25rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Enhanced Header Spacing */
+.header-content {
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.header-center h1 {
+    margin-bottom: 0.5rem;
+}
+
+.header-center .subtitle {
+    margin-bottom: 0;
+}
+
+/* Enhanced Footer Spacing */
+.footer-content {
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.footer-info {
+    margin-bottom: 1rem;
+}
+
+/* Enhanced Input Group Spacing */
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-group .form-control {
+    margin-bottom: 0;
+}
+
+/* Enhanced Flex Spacing */
+.d-flex {
+    gap: 0.75rem;
+}
+
+.d-flex.align-items-center {
+    margin-bottom: 0.75rem;
+}
+
+/* Enhanced Gap Classes */
+.gap-1 { gap: 0.25rem !important; }
+.gap-2 { gap: 0.5rem !important; }
+.gap-3 { gap: 1rem !important; }
+.gap-4 { gap: 1.5rem !important; }
+.gap-5 { gap: 3rem !important; }
+
+/* RESPONSIVE ENHANCEMENTS */
+
+/* Tablet Responsive (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-title {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .border.rounded {
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .form-control {
+        padding: 0.6rem 0.875rem;
+    }
+    
+    [class*="col-"] {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Mobile Responsive (max-width: 767px) */
+@media (max-width: 767px) {
+    .section-title {
+        margin-top: 1.5rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+    }
+    
+    .border.rounded {
+        padding: 1.25rem !important;
+        margin-bottom: 1.5rem !important;
+        border-radius: 10px !important;
+    }
+    
+    .form-control {
+        padding: 0.75rem;
+        font-size: 16px; /* Prevent zoom on iOS */
+    }
+    
+    label {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+    }
+    
+    .form-check-inline {
+        display: block !important;
+        margin-right: 0;
+        margin-bottom: 0.75rem;
+        padding: 0.25rem 0;
+    }
+    
+    [class*="col-"] {
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.875rem 1rem;
+    }
+    
+    canvas {
+        margin: 1rem auto;
+        max-width: 280px;
+    }
+    
+    .d-flex {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .d-flex.align-items-center {
+        align-items: flex-start !important;
+    }
+    
+    /* Mobile specific spacing for complex elements */
+    .col-auto {
+        width: 100% !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    input[style*="width"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    span.ms-2,
+    span.ms-3,
+    span.ms-4 {
+        margin-left: 0 !important;
+        margin-top: 0.5rem !important;
+        display: block !important;
+    }
+}
+
+/* Extra Small Mobile (max-width: 575px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .main-wrapper {
+        margin: 0.5rem auto;
+        padding: 1rem !important;
+    }
+    
+    .section-title {
+        margin-top: 1.25rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    
+    .border.rounded {
+        padding: 1rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+    
+    .form-control {
+        padding: 0.65rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .section-title {
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+        border-bottom: 1px solid #000;
+    }
+    
+    .border.rounded {
+        border: 1px solid #000 !important;
+        margin-bottom: 1rem !important;
+        padding: 0.75rem !important;
+        box-shadow: none !important;
+        background: #fff !important;
+    }
+    
+    .form-control {
+        border: 1px solid #000;
+        margin-bottom: 0.25rem;
+    }
+}

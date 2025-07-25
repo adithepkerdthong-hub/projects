@@ -1,56 +1,209 @@
-/* ปรับปรุง CSS สำหรับการแสดงผลแบบ responsive */
+/* ปรับปรุง CSS สำหรับการแสดงผลแบบ responsive และการจัดระยะห่างที่สวยงาม */
+
+/* ปรับปรุงการจัดระยะห่างทั่วไป */
+.section-title {
+    margin-bottom: 1.5rem !important;
+    margin-top: 2rem !important;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.section-title:first-child {
+    margin-top: 0 !important;
+}
+
+/* ปรับปรุงการจัดระยะห่างของ form sections */
+.border.rounded {
+    margin-bottom: 2rem !important;
+    padding: 1.5rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef !important;
+}
+
+/* ปรับปรุงการจัดระยะห่างของ form rows */
+.row.mb-2 {
+    margin-bottom: 1rem !important;
+}
+
+.row.mb-1 {
+    margin-bottom: 0.75rem !important;
+}
+
+/* ปรับปรุงการจัดระยะห่างของ form controls */
+.form-control {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* ปรับปรุงการจัดระยะห่างของ labels */
+label {
+    margin-bottom: 0.5rem !important;
+    font-weight: 500;
+    color: #495057;
+}
+
+/* ปรับปรุงการจัดระยะห่างของ form-check elements */
+.form-check {
+    margin-bottom: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.form-check-inline {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ปรับปรุงการจัดระยะห่างของ columns */
+[class*="col-"] {
+    margin-bottom: 0.75rem;
+}
+
 @media (max-width: 767px) {
     /* ปรับขนาดฟอนต์ให้เหมาะสมกับมือถือ */
     body {
         font-size: 14px;
     }
     
+    /* ปรับการจัดระยะห่างใน mobile */
+    .section-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem !important;
+        margin-top: 1.5rem !important;
+        padding-bottom: 0.5rem;
+    }
+    
+    .border.rounded {
+        margin-bottom: 1.5rem !important;
+        padding: 1rem !important;
+    }
+    
     /* ปรับขนาดของ input ให้เหมาะสมกับมือถือ */
     .form-control {
         font-size: 16px; /* ป้องกันการซูมอัตโนมัติในมือถือ */
+        padding: 0.6rem 0.75rem;
+        margin-bottom: 0.75rem;
     }
     
     /* ปรับการแสดงผลของ form-check */
     .form-check-inline {
-        margin-right: 0.5rem;
+        margin-right: 0.75rem;
+        margin-bottom: 0.5rem;
+        display: block !important;
+        margin-top: 0.5rem;
     }
     
-    /* ปรับขนาดของ section title */
-    .section-title {
-        font-size: 1.1rem;
-        margin-bottom: 0.75rem;
-    }
-    
-    /* ปรับขนาดของ padding */
-    .p-3 {
-        padding: 0.75rem !important;
+    /* ปรับการแสดงผลของ columns ใน mobile */
+    [class*="col-"] {
+        margin-bottom: 1rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
     }
     
     /* ปรับขนาดของ margin */
     .mb-2 {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .mb-3 {
+        margin-bottom: 1rem !important;
     }
     
     /* ปรับการแสดงผลของ radio และ checkbox */
     .form-check-input {
         margin-top: 0.25rem;
+        margin-right: 0.5rem;
     }
     
     /* ปรับการแสดงผลของ label */
     label {
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem !important;
         display: block;
+        font-size: 14px;
     }
     
     /* ปรับการแสดงผลของ canvas */
     canvas {
         max-width: 100%;
+        margin: 1rem 0;
     }
     
     /* ปรับการแสดงผลของปุ่ม */
     .btn {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        margin: 0.5rem 0.25rem;
+        font-size: 14px;
+    }
+    
+    /* ปรับการจัดระยะห่างของ input groups */
+    .d-flex.align-items-center {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    /* ปรับการจัดระยะห่างของ spans */
+    span {
+        margin: 0.25rem 0;
+        line-height: 1.5;
+    }
+    
+    /* ปรับการจัดระยะห่างสำหรับ form elements ที่ซับซ้อน */
+    .col-auto {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    /* ปรับการจัดระยะห่างของ row elements */
+    .row {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* ปรับการจัดระยะห่างของ input แบบ inline */
+    .d-inline-block {
+        margin: 0.25rem 0.5rem 0.25rem 0;
+    }
+}
+
+/* ปรับปรุงการจัดระยะห่างสำหรับ tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-title {
+        margin-bottom: 1.25rem !important;
+        margin-top: 1.75rem !important;
+    }
+    
+    .border.rounded {
+        padding: 1.25rem !important;
+        margin-bottom: 1.75rem !important;
+    }
+    
+    .form-control {
+        padding: 0.5rem 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    [class*="col-"] {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* ปรับปรุงการจัดระยะห่างสำหรับ desktop */
+@media (min-width: 992px) {
+    .section-title {
+        margin-bottom: 1.75rem !important;
+        margin-top: 2.25rem !important;
+    }
+    
+    .border.rounded {
+        padding: 2rem !important;
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .form-control {
+        padding: 0.6rem 1rem;
+    }
+    
+    /* ปรับการจัดระยะห่างของ form-check ใน desktop */
+    .form-check-inline {
+        margin-right: 1.5rem;
+        margin-bottom: 0.25rem;
     }
 }
 
