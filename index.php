@@ -282,6 +282,10 @@
             border-radius: 10px;
             transition: all 0.3s ease;
             position: relative;
+            display: block;
+            visibility: visible;
+            min-height: 60px;
+            box-sizing: border-box;
         }
         
         .copyright:hover {
@@ -404,12 +408,18 @@
             }
             
             .copyright {
-                padding: 15px 10px;
-                font-size: 0.9rem;
-                margin: 0 5px;
-                word-wrap: break-word;
-                white-space: normal;
-                line-height: 1.4;
+                padding: 15px 10px !important;
+                font-size: 0.9rem !important;
+                margin: 10px 5px !important;
+                word-wrap: break-word !important;
+                white-space: normal !important;
+                line-height: 1.4 !important;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                background: rgba(0, 0, 0, 0.2) !important;
+                color: rgba(255, 255, 255, 0.9) !important;
+                border-radius: 8px !important;
             }
             
             .copyright::before {
@@ -433,8 +443,13 @@
             }
             
             .copyright {
-                font-size: 0.8rem;
-                padding: 12px 8px;
+                font-size: 0.8rem !important;
+                padding: 12px 8px !important;
+                margin: 10px 3px !important;
+                background: rgba(0, 0, 0, 0.25) !important;
+                color: white !important;
+                min-height: 50px !important;
+                border-radius: 6px !important;
             }
         }
     </style>
