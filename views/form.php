@@ -1,8 +1,5 @@
-<!-- Removed all mobile and responsive CSS to force desktop view -->
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
 <link rel="stylesheet" href="./assets/text-align.css">
 <link rel="stylesheet" href="./assets/header-fix.css">
-<!-- <link rel="stylesheet" href="./assets/desktop-force.css"> -->
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <div class="mb-5">

@@ -18,7 +18,6 @@ unset($_SESSION['form_message']);
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <!-- Removed viewport meta for desktop-only layout -->
     <title>ส่งแบบฟอร์มสำเร็จ - บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</title>
     <link rel="icon" href="./assets/icon-white.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -71,7 +70,6 @@ unset($_SESSION['form_message']);
         header .content-padding, footer .content-padding {
             padding: 0 30px;
         }
-        /* Removed all responsive @media queries for desktop-only layout */
     </style>
 </head>
 <body class="py-3">
