@@ -308,22 +308,67 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        /* Scroll Reveal Animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .scroll-reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .scroll-reveal-left.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scroll-reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .scroll-reveal-right.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .scroll-reveal-scale {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .scroll-reveal-scale.revealed {
+            opacity: 1;
+            transform: scale(1);
+        }
     </style>
 </head>
 <body>
 
 <!-- Header -->
 <div class="container">
-    <header>
+    <header class="scroll-reveal-scale">
         <div class="header-content">
-            <div class="header-left">
+            <div class="header-left scroll-reveal-left">
                 <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
             </div>
-            <div class="header-center">
+            <div class="header-center scroll-reveal">
                 <h1>แบบฟอร์มประกันภัย</h1>
                 <div class="subtitle">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
             </div>
-            <div class="header-right">
+            <div class="header-right scroll-reveal-right">
                 <div>บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
             </div>
         </div>
@@ -331,7 +376,7 @@
 </div>
 
 <div class="container">
-    <div class="main-wrapper">
+    <div class="main-wrapper scroll-reveal">
         <!-- Main Content -->
         <?php include 'views/form.php'; ?>
     </div>
@@ -339,12 +384,12 @@
 
 <!-- Footer -->
 <div class="container">
-    <footer>
+    <footer class="scroll-reveal">
         <div class="footer-content">
-            <div class="footer-left">
+            <div class="footer-left scroll-reveal-left">
                 <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
             </div>
-            <div class="footer-right">
+            <div class="footer-right scroll-reveal-right">
                 <div class="footer-company">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
                 <div class="footer-info">
                     33/4 อาคารเอ เดอะไนน์ทาวเวอร์ ชั้น 24-25 ถนนพระราม 9<br>
@@ -360,11 +405,48 @@
 
 <!-- Copyright -->
 <div class="container">
-    <div class="copyright">
+    <div class="copyright scroll-reveal">
         © 2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Scroll Reveal Animation
+function revealOnScroll() {
+    const reveals = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale');
+    
+    reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 100;
+        
+        if (elementTop < windowHeight - elementVisible) {
+            element.classList.add('revealed');
+        }
+    });
+}
+
+// Initial reveal for elements already in view
+document.addEventListener('DOMContentLoaded', function() {
+    // Add staggered delays for header elements
+    const headerElements = document.querySelectorAll('header .scroll-reveal-left, header .scroll-reveal, header .scroll-reveal-right');
+    headerElements.forEach((element, index) => {
+        element.style.transitionDelay = `${index * 0.2}s`;
+    });
+    
+    // Add delays for footer elements
+    const footerElements = document.querySelectorAll('footer .scroll-reveal-left, footer .scroll-reveal-right');
+    footerElements.forEach((element, index) => {
+        element.style.transitionDelay = `${index * 0.3}s`;
+    });
+    
+    // Initial check
+    setTimeout(revealOnScroll, 100);
+});
+
+// Listen for scroll events
+window.addEventListener('scroll', revealOnScroll);
+</script>
 </body>
 </html>
