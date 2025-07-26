@@ -352,13 +352,16 @@
             transform: scale(1);
         }
         
-        /* Ensure copyright displays on all devices */
-        @media (max-width: 768px) {
-            .copyright {
-                display: block !important;
-                visibility: visible !important;
-                opacity: 1 !important;
-            }
+        /* Force copyright to display on all devices */
+        .copyright {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: relative !important;
+            z-index: 1000 !important;
+            background: rgba(0, 0, 0, 0.3) !important;
+            color: white !important;
+            font-weight: 500 !important;
         }
     </style>
 </head>
