@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Auto Script Button</title>
+    <style>
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .git-button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+            margin: 10px;
+            min-width: 200px;
+        }
+        
+        .git-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 107, 107, 0.4);
+            background: linear-gradient(45deg, #ff5252, #e53935);
+        }
+        
+        .git-button:active {
+            transform: translateY(0);
+            box-shadow: 0 6px 15px rgba(255, 107, 107, 0.3);
+        }
+        
+        .status-button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+            margin: 10px;
+            min-width: 150px;
+        }
+        
+        .status-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+        }
+        
+        .output {
+            background: #2d3748;
+            color: #68d391;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            text-align: left;
+            min-height: 100px;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            display: none;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .success {
+            color: #4CAF50;
+        }
+        
+        .error {
+            color: #f44336;
+        }
+        
+        .info {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: left;
+        }
+        
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .git-button {
+                padding: 15px 30px;
+                font-size: 1rem;
+                min-width: 150px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚀</div>
+        <h1>Git Auto Script Controller</h1>
+        
+        <div class="info">
+            <strong>📝 คำแนะนำ:</strong><br>
+            • กด "🔄 รัน Git Auto" เพื่อ commit และ push การเปลี่ยนแปลง<br>
+            • กด "📊 ดู Git Status" เพื่อตรวจสอบสถานะไฟล์<br>
+            • กด "📜 ดู Git Log" เพื่อดู commit ล่าสุด
+        </div>
+        
+        <div class="button-group">
+            <button class="git-button" onclick="runGitAuto()">
+                🔄 รัน Git Auto
+                <span id="loading1" class="loading" style="display: none;"></span>
+            </button>
+            
+            <button class="status-button" onclick="checkGitStatus()">
+                📊 ดู Git Status
+                <span id="loading2" class="loading" style="display: none;"></span>
+            </button>
+            
+            <button class="status-button" onclick="checkGitLog()">
+                📜 ดู Git Log
+                <span id="loading3" class="loading" style="display: none;"></span>
+            </button>
+        </div>
+        
+        <div id="output" class="output"></div>
+    </div>
+
+    <script>
+        async function runCommand(command, loadingId) {
+            const loading = document.getElementById(loadingId);
+            const output = document.getElementById('output');
+            
+            loading.style.display = 'inline-block';
+            output.style.display = 'block';
+            output.textContent = 'กำลังรันคำสั่ง...\n';
+            
+            try {
+                const response = await fetch('run-command.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ command: command })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    output.innerHTML = `<span class="success">✅ สำเร็จ!</span>\n\n${result.output}`;
+                } else {
+                    output.innerHTML = `<span class="error">❌ เกิดข้อผิดพลาด!</span>\n\n${result.output}`;
+                }
+            } catch (error) {
+                output.innerHTML = `<span class="error">❌ เกิดข้อผิดพลาด!</span>\n\nError: ${error.message}\n\n<strong>💡 วิธีใช้งานทางเลือก:</strong>\n1. เปิด Terminal\n2. รันคำสั่ง: ${command}`;
+            }
+            
+            loading.style.display = 'none';
+        }
+        
+        function runGitAuto() {
+            runCommand('./git-auto.sh', 'loading1');
+        }
+        
+        function checkGitStatus() {
+            runCommand('git status', 'loading2');
+        }
+        
+        function checkGitLog() {
+            runCommand('git log --oneline -5', 'loading3');
+        }
+        
+        // Auto refresh every 30 seconds if output is visible
+        setInterval(() => {
+            const output = document.getElementById('output');
+            if (output.style.display === 'block') {
+                const now = new Date().toLocaleTimeString('th-TH');
+                const refreshNote = document.getElementById('refresh-note');
+                if (!refreshNote) {
+                    const note = document.createElement('div');
+                    note.id = 'refresh-note';
+                    note.style.cssText = 'margin-top: 10px; font-size: 0.8rem; color: #888; text-align: center;';
+                    note.textContent = `🕐 อัปเดตล่าสุด: ${now}`;
+                    output.parentNode.insertBefore(note, output.nextSibling);
+                } else {
+                    refreshNote.textContent = `🕐 อัปเดตล่าสุด: ${now}`;
+                }
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
