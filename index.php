@@ -229,14 +229,15 @@
             }
             
             .header-center {
-                padding-left: 0;
+                text-align: left;
+                padding-left: 8px;
                 margin-left: 0;
             }
             .section-title {
                 font-size: 1.3rem;
                 margin-bottom: 1.2rem;
-                text-align: center;
-                padding-left: 0;
+                text-align: left;
+                padding-left: 8px;
             }
             
             .logo-img {
