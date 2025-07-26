@@ -224,8 +224,8 @@
             .header-content {
                 flex-direction: column;
                 gap: 1.2rem;
-                align-items: center;
-                padding: 0 16px;
+                align-items: flex-start;
+                padding: 0 24px;
             }
             
             .header-center {
