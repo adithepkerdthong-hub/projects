@@ -225,6 +225,7 @@
                 flex-direction: column;
                 gap: 1.2rem;
                 align-items: center;
+                justify-content: center;
                 padding: 0 20px;
                 text-align: center;
             }
@@ -232,8 +233,12 @@
             .header-center {
                 text-align: center;
                 padding: 0;
-                margin: 0;
+                margin: 0 auto;
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
             }
             
             .section-title {
