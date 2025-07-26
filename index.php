@@ -224,13 +224,13 @@
             .header-content {
                 flex-direction: column;
                 gap: 1.2rem;
-                align-items: flex-start;
+                align-items: center;
                 padding: 0 24px;
             }
             
             .header-center {
-                text-align: left;
-                padding-left: 8px;
+                text-align: center;
+                padding-left: 0;
                 margin-left: 0;
             }
             .section-title {
