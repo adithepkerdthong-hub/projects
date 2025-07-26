@@ -229,13 +229,6 @@
                 text-align: center;
             }
             
-            .section-title {
-                font-size: 1.1rem;
-                margin-bottom: 0.7rem;
-                text-align: center;
-                padding-left: 0;
-            }
-            
             .logo-img {
                 height: 30px !important;
                 max-height: 30px !important;
@@ -331,11 +324,11 @@
             height: auto;
         }
         .container:first-child {
-            padding-top: 12px;
+            padding-top: 30px;
         }
         
         .container:last-child {
-            padding-bottom: 12px;
+            padding-bottom: 30px;
         }
     </style>
 
