@@ -165,33 +165,7 @@
             margin-top: 20px;
         }
         
-        @media (max-width: 768px) {
-            .header-content, .footer-content {
-                flex-direction: column;
-                text-align: center;
-                gap: 20px;
-            }
-            
-            .header-right {
-                text-align: center;
-            }
-            
-            .header-center h1 {
-                font-size: 1.6rem;
-            }
-            
-            .main-wrapper {
-                padding: 25px;
-            }
-            
-            header, footer {
-                padding: 25px;
-            }
-            
-            .section-title {
-                font-size: 1.4rem;
-            }
-        }
+
     </style>
 </head>
 <body>
