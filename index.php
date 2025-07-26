@@ -201,7 +201,7 @@
     <header>
         <div class="header-content">
             <div class="header-left">
-                <img src="assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
+                <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
             </div>
             <div class="header-center">
                 <h1 class="fw-bold">แบบฟอร์มประกันภัย</h1>
@@ -226,7 +226,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-left">
-                <img src="assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
+                <img src="./assets/logo-white.png" alt="Falcon Insurance" class="logo-img">
             </div>
             <div class="footer-right">
                 <div class="footer-company">บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
