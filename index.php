@@ -191,7 +191,7 @@
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 30px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
         }
@@ -286,6 +286,7 @@
             visibility: visible;
             min-height: 60px;
             box-sizing: border-box;
+            margin-top: 10px;
         }
         
         .copyright:hover {
@@ -413,8 +414,7 @@
     </footer>
 </div>
 
-<!-- Copyright -->
-<div class="container">
+    <!-- Copyright -->
     <div class="copyright scroll-reveal">
         2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
     </div>
