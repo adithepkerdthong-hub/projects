@@ -5,11 +5,12 @@
 <link rel="stylesheet" href="./assets/better-responsive.css">
 <link rel="stylesheet" href="./assets/mobile-fix.css">
 <link rel="stylesheet" href="./assets/mobile-specific-fix.css">
+<link rel="stylesheet" href="./assets/mobile-spacing-fix.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 <div class="mb-5">
-        <div class="col-md-4 text-start">
-            <img src="./assets/logo.png" alt="Falcon Insurance" style="height:50px; margin-right:20px;">
+        <div class="col-md-4 text-start logo-container">
+            <img src="./assets/logo.png" alt="Falcon Insurance" class="form-logo">
         </div>
     <div class="text-center mt-4">
         <div class="form-title" style="font-size:1.6rem; font-weight:700; color:#0a3556;">ใบคำขอเอาประกันภัย</div>

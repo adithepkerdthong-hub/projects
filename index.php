@@ -205,17 +205,17 @@
                 padding: 0;
             }
             .container {
-                padding: 0 20px !important;
+                padding: 0 24px !important;
             }
             .main-wrapper {
                 border-radius: 16px;
                 margin: 8px auto;
-                padding: 24px;
+                padding: 32px;
             }
             header, footer {
                 border-radius: 16px;
                 margin: 8px auto;
-                padding: 24px !important;
+                padding: 32px !important;
                 text-align: center;
             }
             header {
@@ -225,7 +225,7 @@
                 flex-direction: column;
                 gap: 1.2rem;
                 align-items: center;
-                padding: 0 16px;
+                padding: 0 24px;
             }
             
             .header-center {
@@ -273,12 +273,12 @@
             
             .footer-left {
                 justify-content: center;
-                padding: 0 16px;
+                padding: 0 24px;
             }
             
             .footer-right {
                 text-align: center;
-                padding: 0 16px;
+                padding: 0 24px;
             }
             
             .footer-info {
@@ -290,25 +290,25 @@
         /* Extra Small Mobile */
         @media (max-width: 375px) {
             .container {
-                padding: 0 16px !important;
+                padding: 0 20px !important;
             }
             
             .container:first-child {
-                padding-top: 16px !important;
+                padding-top: 20px !important;
             }
             
             .container:last-child {
-                padding-bottom: 16px !important;
+                padding-bottom: 20px !important;
             }
             
             .main-wrapper {
                 margin: 6px auto;
-                padding: 18px;
+                padding: 24px;
             }
             
             header, footer {
                 margin: 6px auto;
-                padding: 18px !important;
+                padding: 24px !important;
             }
             
             .logo-img {

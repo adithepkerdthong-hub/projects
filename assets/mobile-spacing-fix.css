@@ -1,0 +1,132 @@
+/* Mobile Spacing Fix - แก้ไขปัญหาเนื้อหาชิดซ้ายมากเกินไปในมือถือ */
+
+@media (max-width: 767px) {
+    /* เพิ่ม padding ให้กับ container หลัก */
+    .container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+    
+    /* เพิ่ม padding ให้กับ main wrapper */
+    .main-wrapper {
+        padding: 24px !important;
+        margin: 8px auto !important;
+    }
+    
+    /* เพิ่ม padding ให้กับ header และ footer */
+    header, footer {
+        padding: 24px !important;
+    }
+    
+    /* เพิ่ม padding ให้กับ form sections */
+    .border.rounded.p-3 {
+        padding: 16px !important;
+        margin-bottom: 16px !important;
+    }
+    
+    /* เพิ่ม margin ให้กับ form elements */
+    .form-control {
+        margin-bottom: 8px !important;
+    }
+    
+    /* เพิ่ม spacing ให้กับ rows */
+    .row {
+        margin-left: -8px !important;
+        margin-right: -8px !important;
+    }
+    
+    /* เพิ่ม padding ให้กับ columns */
+    [class*="col-"] {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    
+    /* เพิ่ม margin ให้กับ section titles */
+    .section-title {
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        margin-bottom: 16px !important;
+    }
+    
+    /* เพิ่ม padding ให้กับ form checks */
+    .form-check {
+        padding-left: 1.8rem !important;
+        margin-bottom: 8px !important;
+    }
+    
+    /* เพิ่ม spacing ให้กับ buttons */
+    .btn {
+        margin: 4px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    /* สำหรับหน้าจอเล็กมากๆ เพิ่ม padding เพิ่มเติม */
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .main-wrapper {
+        padding: 20px !important;
+    }
+    
+    header, footer {
+        padding: 20px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    /* สำหรับหน้าจอเล็กที่สุด */
+    .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    
+    .main-wrapper {
+        padding: 16px !important;
+    }
+    
+    header, footer {
+        padding: 16px !important;
+    }
+    
+    .border.rounded.p-3 {
+        padding: 12px !important;
+    }
+}
+
+/* Logo styling */
+.form-logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+    .logo-container {
+        text-align: center !important;
+        margin-bottom: 16px !important;
+        padding: 0 16px !important;
+    }
+    
+    .form-logo {
+        height: 40px !important;
+        margin-right: 0 !important;
+        margin-bottom: 8px !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .form-logo {
+        height: 35px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .form-logo {
+        height: 30px !important;
+    }
+}
