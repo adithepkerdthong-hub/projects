@@ -114,6 +114,21 @@
             min-width: 200px;
             font-size: 1.08rem;
             letter-spacing: 0.2px;
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .header-right::before {
+            content: '\f1ad';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f39c12;
+            font-size: 1rem;
+            animation: iconHeartbeat 2s ease-in-out infinite;
         }
         
         .main-wrapper {
