@@ -89,8 +89,8 @@
         
         .header-center {
             text-align: left;
-            padding-left: 12px;
-            margin-left: 20px;
+            padding-left: 8px;
+            margin-left: 8px;
         }
         
         .header-center h1 {
