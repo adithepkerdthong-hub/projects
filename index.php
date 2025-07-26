@@ -33,25 +33,6 @@
             margin-bottom: 30px;
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            transform: rotate(45deg);
-            animation: shimmer 3s ease-in-out infinite;
-        }
-        
-        @keyframes shimmer {
-            0%, 100% { transform: translateX(-100%) rotate(45deg); }
-            50% { transform: translateX(100%) rotate(45deg); }
         }
         
         header:hover {
@@ -66,45 +47,47 @@
             gap: 32px;
             padding: 0 10px;
         }
+        
         .header-left {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
             min-width: 160px;
         }
+        
         .logo-img {
             height: 50px;
             transition: all 0.3s ease;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
+        
         .logo-img:hover {
-            transform: scale(1.1) rotate(5deg);
+            transform: scale(1.1);
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
         }
+        
         .header-center {
             flex: 1;
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            min-width: 0;
         }
+        
         .header-center h1 {
             color: white;
             font-size: 2.1rem;
             font-weight: 700;
             margin: 0 0 6px 0;
             letter-spacing: 0.5px;
-            line-height: 1.1;
         }
+        
         .header-center .subtitle {
             color: rgba(255,255,255,0.92);
             font-size: 1.08rem;
             font-weight: 400;
             margin: 0;
-            letter-spacing: 0.1px;
         }
+        
         .header-right {
             color: white;
             font-weight: 600;
@@ -114,22 +97,6 @@
             justify-content: flex-end;
             min-width: 200px;
             font-size: 1.08rem;
-            letter-spacing: 0.2px;
-            position: relative;
-            padding-left: 40px;
-        }
-        
-        .header-right::before {
-            content: '\f1ad';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #f39c12;
-            font-size: 1rem;
-            animation: iconHeartbeat 2s ease-in-out infinite;
         }
         
         .main-wrapper {
@@ -139,7 +106,6 @@
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
-            position: relative;
         }
         
         .main-wrapper:hover {
@@ -152,38 +118,6 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-            padding-left: 50px;
-        }
-        
-        .section-title::before {
-            content: '\f0c5';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #2980b9;
-            font-size: 1.2rem;
-            animation: iconSpin 3s ease-in-out infinite;
-        }
-        
-        @keyframes iconSpin {
-            0%, 100% { transform: translateY(-50%) rotate(0deg); }
-            50% { transform: translateY(-50%) rotate(10deg); }
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50px;
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(90deg, #0a3556, #1e4a6b);
-            border-radius: 2px;
         }
         
         footer {
@@ -216,103 +150,38 @@
             font-weight: 700;
             font-size: 1.2rem;
             margin-bottom: 15px;
-            position: relative;
-            padding-left: 40px;
-        }
-        
-        .footer-company::before {
-            content: '\f1ad';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #f39c12;
-            font-size: 1rem;
-            animation: iconHeartbeat 2s ease-in-out infinite;
-        }
-        
-        @keyframes iconHeartbeat {
-            0%, 100% { transform: translateY(-50%) scale(1); }
-            25% { transform: translateY(-50%) scale(1.1); }
-            50% { transform: translateY(-50%) scale(1); }
-            75% { transform: translateY(-50%) scale(1.05); }
         }
         
         .footer-info {
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
             margin-bottom: 10px;
-            position: relative;
-            padding-left: 30px;
             transition: all 0.3s ease;
         }
         
         .footer-info:hover {
             color: white;
-            transform: translateX(5px);
-        }
-        
-        .footer-info:nth-child(2)::before {
-            content: '\f3c5';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 5px;
-            color: #2980b9;
-        }
-        
-        .footer-info:nth-child(3)::before {
-            content: '\f095';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 5px;
-            color: #f39c12;
         }
         
         .copyright {
             text-align: center;
             color: rgba(255, 255, 255, 0.8);
             padding: 20px 0;
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            transition: all 0.3s ease;
-            position: relative;
-            display: block;
-            visibility: visible;
-            min-height: 60px;
-            box-sizing: border-box;
             margin-top: 10px;
         }
         
         .copyright:hover {
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.3);
             color: white;
-        }
-        
-        .copyright::before {
-            content: '\f1f9';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            margin-right: 10px;
-            color: #f39c12;
-            animation: iconRotate 3s linear infinite;
-        }
-        
-        @keyframes iconRotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
         }
         
         /* Scroll Reveal Animations */
         .scroll-reveal {
             opacity: 0;
             transform: translateY(50px);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.8s ease;
         }
         
         .scroll-reveal.revealed {
@@ -323,7 +192,7 @@
         .scroll-reveal-left {
             opacity: 0;
             transform: translateX(-50px);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.8s ease;
         }
         
         .scroll-reveal-left.revealed {
@@ -334,7 +203,7 @@
         .scroll-reveal-right {
             opacity: 0;
             transform: translateX(50px);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.8s ease;
         }
         
         .scroll-reveal-right.revealed {
@@ -345,24 +214,12 @@
         .scroll-reveal-scale {
             opacity: 0;
             transform: scale(0.8);
-            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transition: all 0.8s ease;
         }
         
         .scroll-reveal-scale.revealed {
             opacity: 1;
             transform: scale(1);
-        }
-        
-        /* Force copyright to display on all devices */
-        .copyright {
-            display: block !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-            position: relative !important;
-            z-index: 1000 !important;
-            background: rgba(0, 0, 0, 0.3) !important;
-            color: white !important;
-            font-weight: 500 !important;
         }
     </style>
 </head>
