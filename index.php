@@ -222,29 +222,22 @@
                 margin-bottom: 8px !important;
             }
             .header-content {
-                flex-direction: row;
-                gap: 1rem;
+                flex-direction: column;
+                gap: 1.2rem;
                 align-items: center;
-                justify-content: flex-start;
-                padding: 0 16px;
+                padding: 0 24px;
             }
             
             .header-center {
-                text-align: left;
-                padding-left: 8px;
-                margin-left: 8px;
-                flex: 1;
-            }
-            
-            .header-right {
-                text-align: right;
-                font-size: 0.8rem;
+                text-align: center;
+                padding-left: 0;
+                margin-left: 0;
             }
             
             .section-title {
                 font-size: 1.3rem;
                 margin-bottom: 1.2rem;
-                text-align: left;
+                text-align: center;
                 padding-left: 0;
             }
             
@@ -275,19 +268,19 @@
             }
             
             .footer-content {
-                grid-template-columns: auto 1fr;
-                text-align: left;
-                gap: 1.5rem;
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
             }
             
             .footer-left {
-                justify-content: flex-start;
-                padding: 0;
+                justify-content: center;
+                padding: 0 16px;
             }
             
             .footer-right {
-                text-align: left;
-                padding: 0;
+                text-align: center;
+                padding: 0 16px;
             }
             
             .footer-info {
