@@ -1,0 +1,20 @@
+/* Header Fixes */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.header-left img {
+    height: 50px;
+}
+
+.header-center {
+    text-align: center;
+    flex: 1;
+}
+
+.header-right {
+    text-align: right;
+}
