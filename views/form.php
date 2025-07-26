@@ -71,15 +71,79 @@
         padding: 16px !important;
     }
 }
+
+/* แก้ไขหัวข้อ "ใบคำขอเอาประกันภัย" ให้ไม่ชิดขอบ */
+.form-header-section {
+    padding: 0 16px !important;
+}
+
+.form-title {
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+    color: #0a3556 !important;
+}
+
+.form-subtitle {
+    font-size: 1.1rem !important;
+    color: gray !important;
+}
+
+@media screen and (max-width: 768px) {
+    .form-header-section {
+        padding: 0 24px !important;
+        margin: 16px 0 !important;
+    }
+    
+    .form-title {
+        font-size: 1.4rem !important;
+        margin-bottom: 8px !important;
+        padding: 0 8px !important;
+    }
+    
+    .form-subtitle {
+        font-size: 1rem !important;
+        padding: 0 8px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-header-section {
+        padding: 0 20px !important;
+    }
+    
+    .form-title {
+        font-size: 1.3rem !important;
+        padding: 0 12px !important;
+    }
+    
+    .form-subtitle {
+        font-size: 0.95rem !important;
+        padding: 0 12px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .form-header-section {
+        padding: 0 16px !important;
+    }
+    
+    .form-title {
+        padding: 0 8px !important;
+    }
+    
+    .form-subtitle {
+        padding: 0 8px !important;
+    }
+}
 </style>
 
 <div class="mb-5">
         <div class="col-md-4 text-start logo-container">
             <img src="./assets/logo.png" alt="Falcon Insurance" class="form-logo">
         </div>
-    <div class="text-center mt-4">
-        <div class="form-title" style="font-size:1.6rem; font-weight:700; color:#0a3556;">ใบคำขอเอาประกันภัย</div>
-        <div style="font-size:1.1rem; color:gray;">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
+    <div class="text-center mt-4 form-header-section">
+        <div class="form-title">ใบคำขอเอาประกันภัย</div>
+        <div class="form-subtitle">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
     </div>
 </div>
 <form id="insuranceForm" method="post" action="submit.php">

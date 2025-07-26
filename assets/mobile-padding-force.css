@@ -99,6 +99,27 @@ html {
     .footer-right {
         padding: 0 16px !important;
     }
+    
+    /* Form Header Title Force Spacing */
+    body .form-header-section,
+    .form-header-section {
+        padding: 0 24px !important;
+        margin: 16px 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    body .form-title,
+    .form-title {
+        padding: 0 8px !important;
+        margin-bottom: 8px !important;
+        font-size: 1.4rem !important;
+    }
+    
+    body .form-subtitle,
+    .form-subtitle {
+        padding: 0 8px !important;
+        font-size: 1rem !important;
+    }
 }
 
 /* SMALLER MOBILE DEVICES */
@@ -128,6 +149,24 @@ html {
     .border.rounded.p-3,
     div.border.rounded.p-3 {
         padding: 16px !important;
+    }
+    
+    /* Form Header for smaller devices */
+    body .form-header-section,
+    .form-header-section {
+        padding: 0 20px !important;
+    }
+    
+    body .form-title,
+    .form-title {
+        padding: 0 12px !important;
+        font-size: 1.3rem !important;
+    }
+    
+    body .form-subtitle,
+    .form-subtitle {
+        padding: 0 12px !important;
+        font-size: 0.95rem !important;
     }
 }
 
@@ -159,6 +198,24 @@ html {
     div.border.rounded.p-3 {
         padding: 12px !important;
     }
+    
+    /* Form Header for extra small devices */
+    body .form-header-section,
+    .form-header-section {
+        padding: 0 16px !important;
+    }
+    
+    body .form-title,
+    .form-title {
+        padding: 0 8px !important;
+        font-size: 1.2rem !important;
+    }
+    
+    body .form-subtitle,
+    .form-subtitle {
+        padding: 0 8px !important;
+        font-size: 0.9rem !important;
+    }
 }
 
 /* VERY SMALL MOBILE DEVICES */
@@ -188,6 +245,24 @@ html {
     .border.rounded.p-3,
     div.border.rounded.p-3 {
         padding: 10px !important;
+    }
+    
+    /* Form Header for very small devices */
+    body .form-header-section,
+    .form-header-section {
+        padding: 0 12px !important;
+    }
+    
+    body .form-title,
+    .form-title {
+        padding: 0 6px !important;
+        font-size: 1.1rem !important;
+    }
+    
+    body .form-subtitle,
+    .form-subtitle {
+        padding: 0 6px !important;
+        font-size: 0.85rem !important;
     }
 }
 
