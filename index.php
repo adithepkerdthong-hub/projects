@@ -166,22 +166,45 @@
         }
         
         @media (max-width: 768px) {
-            .header-content, .footer-content {
-                flex-direction: column;
-                text-align: center;
+            .container {
+                padding: 0 15px;
+            }
+            
+            .header-content {
+                flex-direction: row;
                 gap: 20px;
+                align-items: center;
+            }
+            
+            .header-center {
+                text-align: center;
             }
             
             .header-right {
-                text-align: center;
+                text-align: right;
+                font-size: 0.9rem;
             }
             
             .header-center h1 {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
+            }
+            
+            .header-center .subtitle {
+                font-size: 1rem;
+            }
+            
+            .footer-content {
+                flex-direction: row;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            
+            .logo-img {
+                height: 40px;
             }
             
             .main-wrapper {
-                padding: 25px;
+                padding: 30px;
             }
             
             header, footer {
@@ -189,7 +212,7 @@
             }
             
             .section-title {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
         }
     </style>
