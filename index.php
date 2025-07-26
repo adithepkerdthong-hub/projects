@@ -34,16 +34,15 @@
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 12px;
+            padding: 0 15px;
         }
         
         .main-wrapper {
             background-color: #fff;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-            border-radius: 18px;
-            margin: 8px auto;
-            padding: 20px;
-            width: 100%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 30px;
         }
         
         .section-title {
@@ -51,75 +50,53 @@
             font-weight: 700;
             color: #0a3556;
             margin-bottom: 1.5rem;
-            letter-spacing: 0.5px;
-            text-align: left;
-            padding-left: 0;
         }
         
         header, footer {
             background-color: #0a3556;
             color: white;
-            border-radius: 14px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-            margin: 4px auto;
-            padding: 20px;
-            text-align: left;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 30px;
         }
         
         .logo-img {
-            height: 40px !important;
-            width: auto !important;
-            object-fit: contain;
-            max-height: 40px !important;
-            max-width: 176px !important;
+            height: 40px;
+            width: auto;
         }
         
         .header-content {
             display: flex;
-            flex-direction: row;
             align-items: center;
-            gap: 1.5rem;
-            justify-content: flex-start;
-        }
-        
-        .header-left {
-            display: flex;
-            align-items: center;
+            gap: 2rem;
         }
         
         .header-center {
-            text-align: left;
+            flex: 1;
         }
         
         .header-center h1 {
-            margin-bottom: 0.3rem;
-            font-size: 1.3rem;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.5rem;
         }
         
         .header-center .subtitle {
-            font-size: 0.9rem;
+            font-size: 1rem;
             opacity: 0.9;
         }
         
         .header-right {
             text-align: right;
-            font-size: 0.95rem;
         }
         
         .footer-content {
-            display: grid;
-            grid-template-columns: auto 1fr;
-            gap: 2rem;
-            align-items: start;
-        }
-        
-        .footer-left {
             display: flex;
             align-items: center;
+            gap: 2rem;
         }
         
         .footer-right {
-            text-align: left;
+            flex: 1;
         }
         
         .footer-company {
@@ -128,207 +105,41 @@
         }
         
         .footer-info {
-            line-height: 1.6;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
         }
         
         .copyright {
             text-align: center;
             color: #888;
-            font-size: 1rem;
-            margin: 24px auto 0 auto;
-            padding: 12px 0;
+            padding: 20px 0;
         }
         
-        /* Tablet Styles */
-        @media (max-width: 991.98px) {
-            .container {
-                padding: 0 16px;
-            }
-            .main-wrapper {
-                border-radius: 14px;
-                margin: 6px auto;
-                padding: 18px;
-            }
-            header, footer {
-                margin: 6px auto;
-                padding: 18px;
-            }
-            
-            .logo-img {
-                height: 35px !important;
-                max-height: 35px !important;
-                max-width: 154px !important;
-            }
-            
-            .header-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 1rem;
-            }
-            
-            .header-left, .header-right {
-                justify-content: center;
-                text-align: center;
-                padding: 0 12px;
-            }
-            
-            .header-center {
-                text-align: center;
-                padding: 0 12px;
-            }
-            
-            .header-center h1 {
-                font-size: 1.2rem;
-            }
-            
-            .header-center .subtitle {
-                font-size: 0.85rem;
-            }
-            
-            .header-right {
-                font-size: 0.9rem;
-            }
-            
-            .section-title {
-                font-size: 1.2rem;
-                padding-left: 0;
-            }
-        }
-        
-        /* Mobile Styles */
-        @media (max-width: 575.98px) {
-            body {
-                padding: 0;
-            }
-            .container {
-                padding: 0 20px !important;
-            }
-            .main-wrapper {
-                border-radius: 16px;
-                margin: 8px auto;
-                padding: 24px;
-            }
-            header, footer {
-                border-radius: 16px;
-                margin: 8px auto;
-                padding: 24px !important;
-                text-align: center;
-            }
-            header {
-                margin-bottom: 8px !important;
-            }
+        @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
-                gap: 0.8rem;
-                align-items: center;
-                padding: 0 8px;
-            }
-            
-            .header-center {
-                text-align: center;
-            }
-            
-            .logo-img {
-                height: 30px !important;
-                max-height: 30px !important;
-                max-width: 132px !important;
-            }
-            
-            .section-title {
-                font-size: 1.1rem;
-            }
-            
-            .header-center h1 {
-                font-size: 1.2rem;
-            }
-            
-            .header-center .subtitle {
-                font-size: 0.9rem;
-            }
-            
-            .header-right {
-                font-size: 0.9rem;
-            }
-            
-            .footer-content {
-                font-size: 0.85rem;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
                 text-align: center;
                 gap: 1rem;
             }
             
-            .footer-left {
-                justify-content: center;
-                padding: 0 16px;
-            }
-            
-            .footer-right {
+            .header-right {
                 text-align: center;
-                padding: 0 16px;
             }
             
-            .footer-info {
-                font-size: 0.85rem;
-                margin-bottom: 0.8rem;
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
             }
         }
         
-        /* Extra Small Mobile */
-        @media (max-width: 375px) {
-            .container {
-                padding: 0 16px !important;
-            }
-            
-            .container:first-child {
-                padding-top: 16px !important;
-            }
-            
-            .container:last-child {
-                padding-bottom: 16px !important;
-            }
-            
-            .main-wrapper {
-                margin: 6px auto;
-                padding: 18px;
-            }
-            
-            header, footer {
-                margin: 6px auto;
-                padding: 18px !important;
-            }
-            
-            .logo-img {
-                height: 25px !important;
-                max-height: 25px !important;
-                max-width: 110px !important;
-            }
-            
-            .section-title {
-                font-size: 1.2rem;
-                padding-left: 0;
-            }
-        }
+
         
-        /* Utility Classes */
         .text-responsive {
             word-wrap: break-word;
-            overflow-wrap: break-word;
         }
         
         .img-responsive {
             max-width: 100%;
             height: auto;
-        }
-        .container:first-child {
-            padding-top: 30px;
-        }
-        
-        .container:last-child {
-            padding-bottom: 30px;
         }
     </style>
 
