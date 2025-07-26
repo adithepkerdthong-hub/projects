@@ -61,81 +61,59 @@
         .header-content {
             display: flex;
             align-items: center;
-            gap: 30px;
+            justify-content: space-between;
+            gap: 32px;
+            padding: 0 10px;
         }
-        
-        .header-center {
-            flex: 1;
-            text-align: center;
+        .header-left {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 160px;
         }
-        
-        .header-center h1 {
-            color: white;
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 0 10px 0;
-            position: relative;
-            padding-left: 50px;
-        }
-        
-        .header-center h1::before {
-            content: '\f0c5';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #f39c12;
-            font-size: 1.5rem;
-            animation: iconPulse 2s ease-in-out infinite;
-        }
-        
-        @keyframes iconPulse {
-            0%, 100% { transform: translateY(-50%) scale(1); }
-            50% { transform: translateY(-50%) scale(1.1); }
-        }
-        
-        .header-center .subtitle {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 1.1rem;
-        }
-        
-        .header-right {
-            color: white;
-            font-weight: 600;
-            text-align: right;
-            position: relative;
-            padding-left: 40px;
-        }
-        
-        .header-right::before {
-            content: '\f0e7';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #f39c12;
-            animation: iconBounce 2s ease-in-out infinite;
-        }
-        
-        @keyframes iconBounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(-50%); }
-            40% { transform: translateY(-60%); }
-            60% { transform: translateY(-55%); }
-        }
-        
         .logo-img {
             height: 50px;
             transition: all 0.3s ease;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
-        
         .logo-img:hover {
             transform: scale(1.1) rotate(5deg);
             filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+        }
+        .header-center {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+        }
+        .header-center h1 {
+            color: white;
+            font-size: 2.1rem;
+            font-weight: 700;
+            margin: 0 0 6px 0;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+        }
+        .header-center .subtitle {
+            color: rgba(255,255,255,0.92);
+            font-size: 1.08rem;
+            font-weight: 400;
+            margin: 0;
+            letter-spacing: 0.1px;
+        }
+        .header-right {
+            color: white;
+            font-weight: 600;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            min-width: 200px;
+            font-size: 1.08rem;
+            letter-spacing: 0.2px;
         }
         
         .main-wrapper {
@@ -369,7 +347,7 @@
                 <div class="subtitle">กรมธรรม์ประกันภัยโรคร้ายแรงและอุบัติเหตุ</div>
             </div>
             <div class="header-right scroll-reveal-right">
-                <div>บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</div>
+                บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)
             </div>
         </div>
     </header>
