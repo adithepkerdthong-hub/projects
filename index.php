@@ -271,7 +271,8 @@
     </footer>
 </div>
 
-    <!-- Copyright -->
+<!-- Copyright -->
+<div class="container">
     <div class="copyright scroll-reveal">
         2025 บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน) สงวนลิขสิทธิ์
     </div>
