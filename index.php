@@ -9,6 +9,7 @@
     <link rel="icon" href="assets/icon-white.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Sarabun', sans-serif;
@@ -73,6 +74,26 @@
             font-size: 2rem;
             font-weight: 700;
             margin: 0 0 10px 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        
+        .header-center h1::before {
+            content: '\f0c5';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f39c12;
+            font-size: 1.5rem;
+            animation: iconPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes iconPulse {
+            0%, 100% { transform: translateY(-50%) scale(1); }
+            50% { transform: translateY(-50%) scale(1.1); }
         }
         
         .header-center .subtitle {
@@ -84,6 +105,26 @@
             color: white;
             font-weight: 600;
             text-align: right;
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .header-right::before {
+            content: '\f0e7';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f39c12;
+            animation: iconBounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes iconBounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(-50%); }
+            40% { transform: translateY(-60%); }
+            60% { transform: translateY(-55%); }
         }
         
         .logo-img {
@@ -119,13 +160,32 @@
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
+            padding-left: 50px;
+        }
+        
+        .section-title::before {
+            content: '\f0c5';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2980b9;
+            font-size: 1.2rem;
+            animation: iconSpin 3s ease-in-out infinite;
+        }
+        
+        @keyframes iconSpin {
+            0%, 100% { transform: translateY(-50%) rotate(0deg); }
+            50% { transform: translateY(-50%) rotate(10deg); }
         }
         
         .section-title::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 50px;
             width: 50px;
             height: 3px;
             background: linear-gradient(90deg, #0a3556, #1e4a6b);
@@ -162,12 +222,62 @@
             font-weight: 700;
             font-size: 1.2rem;
             margin-bottom: 15px;
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .footer-company::before {
+            content: '\f1ad';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f39c12;
+            font-size: 1rem;
+            animation: iconHeartbeat 2s ease-in-out infinite;
+        }
+        
+        @keyframes iconHeartbeat {
+            0%, 100% { transform: translateY(-50%) scale(1); }
+            25% { transform: translateY(-50%) scale(1.1); }
+            50% { transform: translateY(-50%) scale(1); }
+            75% { transform: translateY(-50%) scale(1.05); }
         }
         
         .footer-info {
             color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
             margin-bottom: 10px;
+            position: relative;
+            padding-left: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-info:hover {
+            color: white;
+            transform: translateX(5px);
+        }
+        
+        .footer-info:nth-child(2)::before {
+            content: '\f3c5';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: #2980b9;
+        }
+        
+        .footer-info:nth-child(3)::before {
+            content: '\f095';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            color: #f39c12;
         }
         
         .copyright {
@@ -177,11 +287,26 @@
             background: rgba(0, 0, 0, 0.1);
             border-radius: 10px;
             transition: all 0.3s ease;
+            position: relative;
         }
         
         .copyright:hover {
             background: rgba(0, 0, 0, 0.2);
             color: white;
+        }
+        
+        .copyright::before {
+            content: '\f1f9';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-right: 10px;
+            color: #f39c12;
+            animation: iconRotate 3s linear infinite;
+        }
+        
+        @keyframes iconRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
