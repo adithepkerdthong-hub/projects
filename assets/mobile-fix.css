@@ -1,0 +1,97 @@
+/* Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 10px !important;
+    }
+    
+    .border-box {
+        padding: 1rem !important;
+        margin: 0 10px !important;
+    }
+    
+    .row {
+        margin: 0 !important;
+    }
+    
+    .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-9, .col-md-12 {
+        padding: 5px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .form-control {
+        font-size: 16px !important;
+        padding: 8px 12px !important;
+    }
+    
+    .form-title {
+        font-size: 1.2rem !important;
+    }
+    
+    .section-title {
+        font-size: 1.1rem !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .d-flex {
+        flex-wrap: wrap !important;
+        gap: 5px !important;
+    }
+    
+    .d-inline-flex {
+        flex-wrap: wrap !important;
+    }
+    
+    input[style*="width:350px"], input[style*="width:300px"], input[style*="width:250px"], input[style*="width:200px"] {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    canvas {
+        width: 100% !important;
+        max-width: 300px !important;
+        height: 120px !important;
+    }
+    
+    .btn {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .header-content {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .logo-img {
+        height: 40px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .footer-content {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .border-box {
+        padding: 0.5rem !important;
+        margin: 0 5px !important;
+    }
+    
+    .form-title {
+        font-size: 1rem !important;
+    }
+    
+    .section-title {
+        font-size: 1rem !important;
+    }
+    
+    .form-control {
+        font-size: 14px !important;
+    }
+    
+    .form-check-label {
+        font-size: 14px !important;
+    }
+}
