@@ -6,8 +6,73 @@
 <link rel="stylesheet" href="./assets/mobile-fix.css">
 <link rel="stylesheet" href="./assets/mobile-specific-fix.css">
 <link rel="stylesheet" href="./assets/mobile-spacing-fix.css">
+<link rel="stylesheet" href="./assets/mobile-padding-force.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Sarabun:wght@400;700&family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+/* EMERGENCY MOBILE FIX - บังคับแก้ปัญหาชิดซ้าย */
+@media screen and (max-width: 768px) {
+    .container {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box !important;
+    }
+    
+    .main-wrapper {
+        padding: 32px !important;
+        margin: 8px auto !important;
+        box-sizing: border-box !important;
+    }
+    
+    .border.rounded.p-3 {
+        padding: 20px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+    
+    .form-control {
+        padding: 10px 12px !important;
+        margin-bottom: 8px !important;
+        box-sizing: border-box !important;
+    }
+    
+    .section-title {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        margin-bottom: 16px !important;
+    }
+    
+    .row {
+        margin-left: -8px !important;
+        margin-right: -8px !important;
+    }
+    
+    [class*="col-"] {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+    
+    .main-wrapper {
+        padding: 24px !important;
+    }
+    
+    .border.rounded.p-3 {
+        padding: 16px !important;
+    }
+}
+</style>
+
 <div class="mb-5">
         <div class="col-md-4 text-start logo-container">
             <img src="./assets/logo.png" alt="Falcon Insurance" class="form-logo">

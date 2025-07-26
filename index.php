@@ -340,7 +340,52 @@
         .container:last-child {
             padding-bottom: 12px;
         }
+        
+        /* FORCE MOBILE PADDING - แก้ปัญหาชิดซ้าย */
+        @media screen and (max-width: 768px) {
+            body .container {
+                padding-left: 32px !important;
+                padding-right: 32px !important;
+                box-sizing: border-box !important;
+            }
+            
+            body .main-wrapper {
+                padding: 32px !important;
+                box-sizing: border-box !important;
+            }
+            
+            body header, body footer {
+                padding: 32px !important;
+                box-sizing: border-box !important;
+            }
+            
+            body .header-content {
+                padding: 0 16px !important;
+            }
+            
+            body .footer-left, body .footer-right {
+                padding: 0 16px !important;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            body .container {
+                padding-left: 24px !important;
+                padding-right: 24px !important;
+            }
+            
+            body .main-wrapper {
+                padding: 24px !important;
+            }
+            
+            body header, body footer {
+                padding: 24px !important;
+            }
+        }
     </style>
+    
+    <!-- FORCE MOBILE PADDING CSS -->
+    <link rel="stylesheet" href="./assets/mobile-padding-force.css">
 
 </head>
 <body>

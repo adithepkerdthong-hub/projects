@@ -1,21 +1,33 @@
 /* Mobile Spacing Fix - แก้ไขปัญหาเนื้อหาชิดซ้ายมากเกินไปในมือถือ */
 
-@media (max-width: 767px) {
+/* Override สำหรับทุกขนาดหน้าจอมือถือ */
+@media screen and (max-width: 768px) {
     /* เพิ่ม padding ให้กับ container หลัก */
     .container {
-        padding-left: 24px !important;
-        padding-right: 24px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        box-sizing: border-box !important;
     }
     
+    /* Override Bootstrap container */
+    .container-fluid {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+    
+@media screen and (max-width: 768px) {
     /* เพิ่ม padding ให้กับ main wrapper */
     .main-wrapper {
-        padding: 24px !important;
+        padding: 30px !important;
         margin: 8px auto !important;
+        box-sizing: border-box !important;
     }
     
     /* เพิ่ม padding ให้กับ header และ footer */
     header, footer {
-        padding: 24px !important;
+        padding: 30px !important;
+        box-sizing: border-box !important;
     }
     
     /* เพิ่ม padding ให้กับ form sections */
