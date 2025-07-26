@@ -89,8 +89,6 @@
         
         .header-center {
             text-align: left;
-            padding-left: 8px;
-            margin-left: 8px;
         }
         
         .header-center h1 {
@@ -178,7 +176,6 @@
             .header-center {
                 text-align: center;
                 padding: 0 12px;
-                margin-left: 0;
             }
             
             .header-center h1 {
@@ -226,6 +223,10 @@
                 gap: 0.8rem;
                 align-items: center;
                 padding: 0 8px;
+            }
+            
+            .header-center {
+                text-align: center;
             }
             
             .section-title {
