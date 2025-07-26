@@ -223,18 +223,14 @@
             }
             .header-content {
                 flex-direction: column;
-                gap: 1.2rem;
+                gap: 0.8rem;
                 align-items: center;
-                padding: 0 20px;
-            }
-            
-            .header-center {
-                text-align: center;
+                padding: 0 8px;
             }
             
             .section-title {
-                font-size: 1.3rem;
-                margin-bottom: 1.2rem;
+                font-size: 1.1rem;
+                margin-bottom: 0.7rem;
                 text-align: center;
                 padding-left: 0;
             }
