@@ -352,104 +352,12 @@
             transform: scale(1);
         }
         
-        /* Mobile Responsive */
+        /* Ensure copyright displays on all devices */
         @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-            
-            body {
-                padding: 10px 0;
-            }
-            
-            header {
-                padding: 20px 15px;
-                margin-bottom: 20px;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
-            }
-            
-            .header-left, .header-right {
-                min-width: auto;
-                justify-content: center;
-            }
-            
-            .header-right {
-                padding-left: 40px;
-                text-align: center;
-            }
-            
-            .header-center h1 {
-                font-size: 1.6rem;
-            }
-            
-            .header-center .subtitle {
-                font-size: 0.95rem;
-            }
-            
-            .main-wrapper {
-                padding: 20px 15px;
-                margin-bottom: 20px;
-            }
-            
-            footer {
-                padding: 20px 15px;
-                margin-bottom: 15px;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-            }
-            
             .copyright {
-                padding: 15px 10px !important;
-                font-size: 0.9rem !important;
-                margin: 10px 5px !important;
-                word-wrap: break-word !important;
-                white-space: normal !important;
-                line-height: 1.4 !important;
                 display: block !important;
                 visibility: visible !important;
                 opacity: 1 !important;
-                background: rgba(0, 0, 0, 0.2) !important;
-                color: rgba(255, 255, 255, 0.9) !important;
-                border-radius: 8px !important;
-            }
-            
-            .copyright::before {
-                display: inline-block;
-                margin-right: 8px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .header-center h1 {
-                font-size: 1.4rem;
-            }
-            
-            .header-center .subtitle {
-                font-size: 0.85rem;
-            }
-            
-            .header-right {
-                font-size: 0.9rem;
-                padding-left: 30px;
-            }
-            
-            .copyright {
-                font-size: 0.8rem !important;
-                padding: 12px 8px !important;
-                margin: 10px 3px !important;
-                background: rgba(0, 0, 0, 0.25) !important;
-                color: white !important;
-                min-height: 50px !important;
-                border-radius: 6px !important;
             }
         }
     </style>
