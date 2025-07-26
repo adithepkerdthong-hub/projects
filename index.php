@@ -30,6 +30,31 @@
             padding: 30px;
             margin-bottom: 30px;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { transform: translateX(-100%) rotate(45deg); }
+            50% { transform: translateX(100%) rotate(45deg); }
+        }
+        
+        header:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
         }
         
         .header-content {
@@ -63,6 +88,13 @@
         
         .logo-img {
             height: 50px;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+        }
+        
+        .logo-img:hover {
+            transform: scale(1.1) rotate(5deg);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
         }
         
         .main-wrapper {
@@ -71,6 +103,13 @@
             padding: 40px;
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .main-wrapper:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
         }
         
         .section-title {
@@ -78,6 +117,19 @@
             font-size: 1.5rem;
             font-weight: 700;
             margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(90deg, #0a3556, #1e4a6b);
+            border-radius: 2px;
         }
         
         footer {
@@ -87,6 +139,12 @@
             padding: 30px;
             margin-bottom: 20px;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        footer:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
         
         .footer-content {
@@ -118,6 +176,12 @@
             padding: 20px 0;
             background: rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .copyright:hover {
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
         }
     </style>
 </head>
