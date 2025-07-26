@@ -18,7 +18,7 @@ unset($_SESSION['form_message']);
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Removed viewport meta for desktop-only layout -->
     <title>ส่งแบบฟอร์มสำเร็จ - บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</title>
     <link rel="icon" href="./assets/icon-white.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -71,43 +71,7 @@ unset($_SESSION['form_message']);
         header .content-padding, footer .content-padding {
             padding: 0 30px;
         }
-        @media (max-width: 1199.98px) {
-            .container-custom, .main-wrapper, header, footer {
-                max-width: 960px;
-            }
-            .content-padding {
-                padding: 0 20px;
-            }
-        }
-        @media (max-width: 991.98px) {
-            .container-custom, .main-wrapper, header, footer {
-                max-width: 720px;
-            }
-        }
-        @media (max-width: 767.98px) {
-            .container-custom, .main-wrapper, header, footer {
-                max-width: 540px;
-            }
-            .content-padding {
-                padding: 0 15px;
-            }
-            .row {
-                flex-direction: column !important;
-            }
-            .col-md-4, .col-md-8, .col-md-2, .col-md-3, .col-md-6 {
-                width: 100% !important;
-                max-width: 100% !important;
-                text-align: center !important;
-                margin-bottom: 15px;
-            }
-            header .col-md-4.text-start, footer .col-md-2.text-start {
-                text-align: center !important;
-            }
-            header .col-md-4.text-start img, footer .col-md-2.text-start img {
-                margin-right: 0;
-                display: inline-block !important;
-            }
-        }
+        /* Removed all responsive @media queries for desktop-only layout */
     </style>
 </head>
 <body class="py-3">
