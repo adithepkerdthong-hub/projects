@@ -5,6 +5,7 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>แบบฟอร์มประกันภัย - บริษัท ฟอลคอนประกันภัย จำกัด (มหาชน)</title>
     <link rel="icon" href="assets/icon-white.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -345,6 +346,96 @@
         .scroll-reveal-scale.revealed {
             opacity: 1;
             transform: scale(1);
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            body {
+                padding: 10px 0;
+            }
+            
+            header {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+            
+            .header-left, .header-right {
+                min-width: auto;
+                justify-content: center;
+            }
+            
+            .header-right {
+                padding-left: 40px;
+                text-align: center;
+            }
+            
+            .header-center h1 {
+                font-size: 1.6rem;
+            }
+            
+            .header-center .subtitle {
+                font-size: 0.95rem;
+            }
+            
+            .main-wrapper {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+            
+            footer {
+                padding: 20px 15px;
+                margin-bottom: 15px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .copyright {
+                padding: 15px 10px;
+                font-size: 0.9rem;
+                margin: 0 5px;
+                word-wrap: break-word;
+                white-space: normal;
+                line-height: 1.4;
+            }
+            
+            .copyright::before {
+                display: inline-block;
+                margin-right: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-center h1 {
+                font-size: 1.4rem;
+            }
+            
+            .header-center .subtitle {
+                font-size: 0.85rem;
+            }
+            
+            .header-right {
+                font-size: 0.9rem;
+                padding-left: 30px;
+            }
+            
+            .copyright {
+                font-size: 0.8rem;
+                padding: 12px 8px;
+            }
         }
     </style>
 </head>
