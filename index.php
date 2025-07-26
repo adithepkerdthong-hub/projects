@@ -225,13 +225,15 @@
                 flex-direction: column;
                 gap: 1.2rem;
                 align-items: center;
-                padding: 0 24px;
+                padding: 0 20px;
+                text-align: center;
             }
             
             .header-center {
                 text-align: center;
-                padding-left: 0;
-                margin-left: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
             }
             
             .section-title {
