@@ -32,9 +32,7 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             position: relative;
-            overflow-x: auto;
-            min-width: 1200px;
-            width: 100%;
+            overflow-x: hidden;
         }
 
         /* Animated Background */
@@ -87,10 +85,8 @@
 
         .container {
             max-width: 1400px;
-            width: 1400px;
             position: relative;
             z-index: 2;
-            margin: 0 auto;
         }
 
         /* Header Styles */
