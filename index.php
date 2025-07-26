@@ -166,45 +166,22 @@
         }
         
         @media (max-width: 768px) {
-            .container {
-                padding: 0 15px;
-            }
-            
-            .header-content {
-                flex-direction: row;
-                gap: 20px;
-                align-items: center;
-            }
-            
-            .header-center {
+            .header-content, .footer-content {
+                flex-direction: column;
                 text-align: center;
+                gap: 20px;
             }
             
             .header-right {
-                text-align: right;
-                font-size: 0.9rem;
+                text-align: center;
             }
             
             .header-center h1 {
-                font-size: 1.4rem;
-            }
-            
-            .header-center .subtitle {
-                font-size: 1rem;
-            }
-            
-            .footer-content {
-                flex-direction: row;
-                gap: 20px;
-                align-items: flex-start;
-            }
-            
-            .logo-img {
-                height: 40px;
+                font-size: 1.6rem;
             }
             
             .main-wrapper {
-                padding: 30px;
+                padding: 25px;
             }
             
             header, footer {
@@ -212,7 +189,7 @@
             }
             
             .section-title {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
     </style>
